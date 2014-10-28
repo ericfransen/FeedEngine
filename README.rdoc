@@ -1,9 +1,80 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### [HotStreak]
 
-Things you may want to cover:
+#### Pitch
+
+Track your daily progress on goals which matter most to you
+
+#### Description
+
+Today it seems like we’re gamifying everything. Whether it’s your consecutive
+days of commits on GitHub or the activity from a Fitbit, there’s data everywhere.
+Hot Streak allows you to aggregate those datapoints in one place and track your
+progress in a fun way.
+
+#### Target Audience
+
+This application will be geared toward people who want to increase their
+productivity and be accountable for the goals they set for themselves.  HotStreak
+will be for people who people who want a tool to keep them accountable to themselves
+as well as people who want to broadcast their goals and compete with others.
+
+#### Integrations
+
+* OAuth provider:
+  Twitter OAuth
+
+* API use:
+- GitHub API
+
+* Other integration ideas:
+- GoodReads
+- FitBit / RunKeeper
+
+
+### Technical Expectations
+
+- Learn to consume data from various third-party APIs
+- Make aggregated data available through an API
+- Build and use a Ruby Gem wrapping your own API
+- Coordinate with project stakeholders to produce quality code and product
+- Continue to emphasize performance, UI, and overall user experience
+- Continue using TDD to drive all layers of Rails development
+
+
+### Technical Requirements
+
+## Caching and Data Querying
+
+- data caching
+- fragment caching / Russian-Doll Caching
+- query consolidation
+- database optimizations (query count, using indicies, joins)
+- Background Workers
+
+## Make extensive use of background workers including:
+
+- Sending or receiving email/sms
+- Querying and fetching data from third-party APIs
+- Processing bulk data
+- Providing an API & Gem
+
+- Background workers may not connect to application database directly or load
+  the Rails environment for your app. (They must go through your API gem to read
+  from and write to feeds).
+
+## Provisioning & Using a VPS
+
+- Deploy on a VPS instance which you have built:
+    - installing Ruby/Rails
+    - Apache/NGINX
+    - PostgreSQL
+    - Redis
+    - security
+
+
+### Up and Running
 
 * Ruby version
 
@@ -15,14 +86,12 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
+* How to run the test suite:
+
+```
+bundle exec rspec
+```
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
