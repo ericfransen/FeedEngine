@@ -1,6 +1,7 @@
 class GitHubGoal < ActiveRecord::Base
   belongs_to :user
 
+
   def get_the_json
     response =  Faraday.get("https://api.github.com/users/dglunz/events")
     JSON.parse(response.body)
@@ -10,12 +11,12 @@ class GitHubGoal < ActiveRecord::Base
     get_the_json.select { |event| event["type"] == "PushEvent" }
   end
 
-  def todays_shit
+  def daily_events
     push_events.select { |event| Date.parse(event["created_at"]) == Date.today }
   end
 
-  def today_commit_count
-    todays_shit.inject(0) { |sum, event| sum + event["payload"]["commits"].count }
+  def daily_commit_count
+    daily_events.inject(0) { |sum, event| sum + event["payload"]["commits"].count }
   end
 
   def start_date
