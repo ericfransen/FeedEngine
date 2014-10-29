@@ -1,0 +1,2 @@
+class GithubGoalsController < ApplicationController
+end
