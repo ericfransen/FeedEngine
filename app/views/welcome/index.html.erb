@@ -1,0 +1,72 @@
+<div class='homepage_container'>
+  <nav class='top-bar top_bar_color' data-topbar role='navigation'>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1><%= link_to 'Hot Streak', root_path %></h1>
+      </li>
+    </ul>
+
+    <section class='top-bar-section'>
+      <ul class='right'>
+        <li><%= link_to 'Sign In', root_path%>
+        <li><%= link_to 'My Streaks', root_path%> </li> 
+        <li><%=link_to 'Friends Streaks', root_path %></li>
+      </ul>
+    </section>
+  </nav>
+
+  <div class='intro_paragraph'>
+    <div class='intro_text'>
+      <p class='intro_headline'>
+        Get Shit Done
+      </p>
+      <p class='intro_subheadline'>
+        Track your daily tasks
+      </p>
+      <%= link_to 'Start Your Hot Streak Today', root_path, class: 'button' %>
+    </div>
+  </div>
+
+  <div class='row logo_section'>
+    <h2>Hot Streak Works With These Apps</h2>
+    <div class='large-4 columns'>
+      <div class='github_logo'>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <div class='fitbit_logo'>
+      </div>
+    </div>
+    <div class='large-4 columns'>
+      <div class='good_reads_logo'>
+      </div>
+    </div>
+  </div>
+
+  <div class='example_dashboard'>
+    <h2>Fully Customizable</h2>
+    <span>You Decide How to Make a Hot Streak</span>
+    <div class='top_dash row'>
+      <div class='large-3 columns'>
+        <div class='profile_pic'>
+        </div>
+      </div>
+      <div class='large-3 columns'>
+        <div class='github_logo'>
+        </div>
+      </div>
+      <div class='large-6 columns'>
+      </div>
+    </div>
+    <div class='streak_data'>
+      <div class='progress'>
+        <span class='meter'></span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+</div>
+

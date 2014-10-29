@@ -1,0 +1,101 @@
+.homepage_container {
+  background-color: #ebebeb;
+}
+
+.top-bar{
+  background-color: #F24B00;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  padding-left: 30px;
+  background-color: #f24b00;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  color: #87F2E6; 
+  background-color: #f24b00;
+}
+
+.intro_paragraph {
+  height: 100vh;
+  width: 100%;
+  background-image: url('prgramming_pic.jpg');
+}
+
+.intro_text {
+  text-align: center;
+  color: #87F2E6;
+}
+.intro_headline {
+  font-size: 5em;
+  padding-top: 14%;
+  margin-bottom: 0;
+}
+
+.intro_subheadline {
+  font-size: 1.5em;
+}
+
+.logo_section {
+  width: 100%;
+  height: 100%;
+  background-color: #ebebeb;
+  text-align: center;
+}
+
+.logo_section h2 {
+  font-size: 2em;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.github_logo {
+  width: 100%;
+  height: 200px;
+  background-image: url('github.png');
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+  margin-left: auto;
+}
+
+.fitbit_logo {
+  width: 100%;
+  height: 200px;
+  background-image: url('fitbit.png');
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+  margin-left: auto;
+  margin-top: 22%;
+}
+
+.good_reads_logo {
+  width: 100%;
+  height: 200px;
+  background-image: url('good_reads.png');
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+  margin-left: auto;
+  margin-top: 25%;
+}
+
+.example_dashboard { 
+  padding-top: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.profile_pic {
+  width: 100%;
+  height: 225px;
+  margin-left: auto;
+  background-image: url('fake_profile.jpg');
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+}
+
+.example_dashboard .github_logo{
+  margin-top: 28px;  
+  background-size: 68% auto;
+}
+
+
