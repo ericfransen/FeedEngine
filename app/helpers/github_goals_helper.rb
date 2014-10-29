@@ -1,0 +1,2 @@
+module GithubGoalsHelper
+end
