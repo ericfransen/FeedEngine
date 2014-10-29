@@ -14,7 +14,16 @@ describe 'github goals', :type => :feature do
     end
 
     it 'can enter a username' do
+      visit new_github_goal_path
+      goals = GithubGoal.all
+      expect(goals.count).to eq(0)
 
+      fill_in('Username', with: 'dglunz')
+      click_on('Submit Username')
+
+      expect(goals.count).to eq(1)
+      expect(current_path).to eq(edit_github_goal_path(goals.first))
+      expect(goals.first.username).to eq('dglunz')
     end
   end
 end
