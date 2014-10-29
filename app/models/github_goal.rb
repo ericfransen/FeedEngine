@@ -1,7 +1,6 @@
 class GitHubGoal < ActiveRecord::Base
   belongs_to :user
 
-
   def get_the_json
     response =  Faraday.get("https://api.github.com/users/dglunz/events")
     JSON.parse(response.body)
@@ -24,6 +23,6 @@ class GitHubGoal < ActiveRecord::Base
   end
 
   def streak_count
-    
+
   end
 end
