@@ -8,9 +8,12 @@
 
     <section class='top-bar-section'>
       <ul class='right'>
-        <li><%= link_to 'Sign In', root_path%>
-        <li><%= link_to 'My Streaks', root_path%> </li>
-        <li><%=link_to 'Friends Streaks', root_path %></li>
+        <% if current_user %>
+          <li><%= link_to 'Log Out', logout_path %>
+          <li><%= link_to 'My Goals', goals_path %>
+        <% else %>
+          <li><%= link_to 'Log In', login_path %>
+        <% end %>
       </ul>
     </section>
   </nav>
@@ -23,7 +26,11 @@
       <p class='intro_subheadline'>
         Track your daily tasks
       </p>
-      <%= link_to 'Start Your Hot Streak Today', goals_path, class: 'button' %>
+      <% if current_user %>
+        <%= link_to 'Start Your Hot Streak Today', goals_path, class: 'button' %>
+      <% else %>
+        <%= link_to 'Start Your Hot Streak Today', login_path, class: 'button' %>
+      <% end %>
     </div>
   </div>
 

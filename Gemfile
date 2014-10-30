@@ -15,6 +15,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'unicorn'
 gem 'figaro'
 gem 'faraday'
+gem 'omniauth-twitter'
+gem 'omniauth'
 
 
 group :development, :test do
