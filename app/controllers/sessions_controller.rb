@@ -14,7 +14,4 @@ class SessionsController < ApplicationController
     redirect_to root_path, notice: 'Sorry, login failed!'
   end
 
-  def git
-  end
-
 end
