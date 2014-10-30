@@ -17,13 +17,22 @@ describe 'github goals', :type => :feature do
       visit new_github_goal_path
       goals = GithubGoal.all
       expect(goals.count).to eq(0)
-
       fill_in('Username', with: 'dglunz')
       click_on('Submit Username')
-
       expect(goals.count).to eq(1)
-      expect(current_path).to eq(edit_github_goal_path(goals.first))
       expect(goals.first.username).to eq('dglunz')
+      expect(current_path).to eq(edit_github_goal_path(goals.first))
+    end
+
+    it 'can define a github goal' do
+      visit new_github_goal_path
+      fill_in('Username', with: 'dglunz')
+      click_on('Submit Username')
+      find('#github_goal_commit_goal').find(:xpath, 'option[4]').select_option
+      click_on('Create Goal')
+      goal = GithubGoal.all.first
+      expect(goal.commit_goal).to eq(4)
+      expect(current_path).to eq goals_path
     end
   end
 end

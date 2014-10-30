@@ -1,0 +1,6 @@
+<div class = 'row'>
+  <%= form_for @github_goal do |f| %>
+    <%= f.select :commit_goal, (1..10).to_a %>
+    <%= f.submit 'Create Goal', class: 'button' %>
+  <% end %>
+</div>
