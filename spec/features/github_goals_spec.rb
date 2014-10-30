@@ -24,13 +24,13 @@ describe 'github goals', :type => :feature do
       expect(current_path).to eq(edit_github_goal_path(goals.first))
     end
 
-    it 'can define a github goal' do
+    it 'can define daily commits in github goal' do
       visit new_github_goal_path
       fill_in('Username', with: 'dglunz')
       click_on('Submit Username')
       find('#github_goal_commit_goal').find(:xpath, 'option[4]').select_option
       click_on('Create Goal')
-      goal = GithubGoal.all.first
+      goal = GithubGoal.first
       expect(goal.commit_goal).to eq(4)
       expect(current_path).to eq goals_path
     end
