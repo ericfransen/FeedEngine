@@ -3,17 +3,17 @@
 }
 
 .top-bar{
-  background-color: #F24B00;
+  background-color: #7dbbc2;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   padding-left: 30px;
-  background-color: #f24b00;
+  background-color: #7dbbc2;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-  color: #87F2E6; 
-  background-color: #f24b00;
+  color: black; 
+  background-color: #7dbbc2;
 }
 
 .intro_paragraph {
@@ -24,7 +24,7 @@
 
 .intro_text {
   text-align: center;
-  color: #87F2E6;
+  color: white;
 }
 .intro_headline {
   font-size: 5em;
@@ -93,9 +93,49 @@
   background-size: 75% auto;
 }
 
-.example_dashboard .github_logo{
-  margin-top: 28px;  
-  background-size: 68% auto;
+.github_and_hotstreak {
 }
+
+.example_dashboard {
+  margin-top: 25px;
+}
+
+.top_dash{
+  margin-top: 35px;
+}
+.example_dashboard .github_logo{
+  margin-top: 25px;  
+  background-size: 68% auto;
+  left: 95%;
+}
+
+.hot_streak_stamp {
+  height:100%;
+  width:100%;
+  background-image: url('hot_streak.png');
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+}
+
+.streak_data {
+  margin-top: 55px;
+}
+.streak_data_title{
+  margin-left: auto;
+  font-size: 1.5em;
+  margin-left: 14px;
+  font-weight: 500;
+}
+
+.progress {
+  margin-top: 30px;
+}
+
+.longest_streak {
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: #F24B00; 
+}
+
 
 

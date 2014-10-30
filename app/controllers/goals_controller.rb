@@ -4,4 +4,5 @@ class GoalsController < ApplicationController
     @github_goals = GithubGoal.all
   end
 
+
 end
