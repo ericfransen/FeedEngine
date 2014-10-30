@@ -13,4 +13,7 @@ class SessionsController < ApplicationController
   def failure
     redirect_to root_path, notice: 'Sorry, login failed!'
   end
+
+  def test_git
+  end
 end
