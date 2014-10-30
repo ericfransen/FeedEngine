@@ -1,15 +1,18 @@
 <nav class='top-bar top_bar_color' data-topbar role='navigation'>
   <ul class='title-area'>
     <li class='name'>
-      <h1><%= link_to 'Hot Streak', root_path %></h1>
+      <h1><%= link_to 'Successive Life', root_path %></h1>
     </li>
   </ul>
 
   <section class='top-bar-section'>
     <ul class='right'>
-      <li><%= link_to 'Sign In', root_path%>
-      <li><%= link_to 'My Streaks', root_path%> </li>
-      <li><%=link_to 'Friends Streaks', root_path %></li>
+      <% if current_user %>
+        <li><%= link_to 'Log Out', logout_path %>
+        <li><%= link_to 'My Goals', goals_path %>
+      <% else %>
+        <li><%= link_to 'Log In', login_path %>
+      <% end %>
     </ul>
   </section>
 </nav>

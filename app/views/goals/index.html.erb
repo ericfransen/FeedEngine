@@ -1,4 +1,25 @@
-<div class="row">
-  <h1>Goals</h1>
-  <%= link_to 'Github Integration', new_github_goal_path, class: 'button' %>
+<div id="background">
+  <div id="sidebar">
+    <%= link_to 'GitHub Integration', new_github_goal_path, class: 'button' %>
+    <%= link_to 'FitBit Integration', '#', class: 'button' %>
+    <%= link_to 'GoodReads Int.', '#', class: 'button' %>
+
+
+  </div>
+
+  <div class="row" class="boxes" id="github">
+    <img src='/assets/github.png' alt="GitHub" id="mini_logo">
+    <!-- <h3>GitHub</h3> -->
+  </div>
+
+  <div class="row" class="boxes" id="fitbit">
+    <img src='/assets/good_reads.png' alt="GoodReads" id="mini_logo">
+    <!-- <h3>FitBit</h3> -->
+  </div>
+
+  <div class="row" class="boxes" id="goodreads">
+    <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
+    <!-- <h3>GoodReads</h3> -->
+  </div>
+
 </div>

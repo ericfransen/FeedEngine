@@ -1,6 +1,5 @@
 <div class='homepage_container'>
 
-
   <div class='intro_paragraph'>
     <div class='intro_text'>
       <p class='intro_headline'>
@@ -9,7 +8,11 @@
       <p class='intro_subheadline'>
         Track your daily tasks
       </p>
-      <%= link_to 'Start Your Hot Streak Today', goals_path, class: 'button' %>
+      <% if current_user %>
+        <%= link_to 'Start Your Hot Streak Today', goals_path, class: 'button' %>
+      <% else %>
+        <%= link_to 'Start Your Hot Streak Today', login_path, class: 'button' %>
+      <% end %>
     </div>
   </div>
 
