@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Successive Life" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -13,8 +13,10 @@
     <script src="//vjs.zencdn.net/4.10.0/video.js"></script>
   </head>
 
+
   <body>
     <%= render partial: 'layouts/navbar' %>
+
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>

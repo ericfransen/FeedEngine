@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#coming_soon {
+  text-align: center;
+}
+
 #background {
   background: #2f3f43;
   height: 100%;
@@ -9,8 +13,8 @@
   position: absolute;
 }
 
-.boxes {
-  border-radius: 10px;
+.services {
+  border-radius: 5px;
 }
 
 #sidebar {
@@ -21,17 +25,17 @@
   width: 250px;
   margin:10px;
   padding: 10px;
-  border-radius: 5px;
+  // border-radius: 5px;
   background: #d5f0f0;
 }
 
 #github {
   // float: left;
   width: 60%;
-  height: 200px;
+  height: 206px;
   margin: 10px 0 0 270px;
   padding: 10px;
-  border-radius: 5px;
+  // border-radius: 5px;
   background: #f5f5f5;
 }
 
@@ -41,18 +45,18 @@
 
 #fitbit {
   width: 60%;
-  height:200px;
+  height:206px;
   margin: 10px 0 0 270px;
   padding: 10px;
-  border-radius: 5px;
+  // border-radius: 5px;
   background: white;
 }
 
 #goodreads {
   width: 60%;
-  height: 200px;
+  height: 207px;
   margin: 10px 0 0 270px;
   padding: 10px;
-  border-radius: 5px;
+  // border-radius: 5px;
   background: #f0f0e4;
 }

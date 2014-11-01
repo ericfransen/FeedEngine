@@ -12,7 +12,7 @@
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-  color: black; 
+  color: black;
   background-color: #7dbbc2;
 }
 
@@ -78,7 +78,7 @@
   margin-top: 25%;
 }
 
-.example_dashboard { 
+.example_dashboard {
   padding-top: 30px;
   background-color: white;
   text-align: center;
@@ -104,7 +104,7 @@
   margin-top: 35px;
 }
 .example_dashboard .github_logo{
-  margin-top: 25px;  
+  margin-top: 25px;
   background-size: 68% auto;
   left: 95%;
 }
@@ -134,8 +134,50 @@
 .longest_streak {
   margin-top: 50px;
   font-size: 1.2em;
-  color: #F24B00; 
+  color: #F24B00;
 }
 
+.github_panel {
+  min-height: 40em;
+  min-width: 40em;
+  margin: auto;
+  border-radius: 2em;
+  background-image: url('opaque_kitty.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
+.github-username {
+  padding-top: 7.5em;
+  margin: auto;
+  width: 45%;
+}
 
+.github-goal-edit {
+  margin: auto;
+  width: 40%;
+}
+
+.github-goal-edit label{
+  text-align: left;
+  margin-left: 1.4em;
+}
+
+.github-goal-edit select {
+  width: 50%;
+}
+
+.github_panel_edit {
+  min-height: 40em;
+  min-width: 40em;
+  margin: auto;
+  border-radius: 2em;
+  background-image: url('opaque_color_octocat.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.github_panel_edit h1 {
+  padding-top: 2em;
+}
