@@ -4,10 +4,11 @@ class User < ActiveRecord::Base
 
   def self.find_or_create_by_auth(auth_data)
     user = self.find_or_initialize_by(provider: auth_data["provider"], uid: auth_data['uid'])
+    binding.pry
     unless user.persisted? && user.name == auth_data['info']['uid']
-      user.name        = auth_data.info.name
-      user.email       = auth_data.info.email
-      user.twitter_pic = auth_data.info.image
+      user.name        = auth_data['info']['name']
+      user.email       = auth_data['info']['email']
+      user.twitter_pic = auth_data['info']['image']
       user.save!
     end
     user
