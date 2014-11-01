@@ -4,7 +4,8 @@ def twitter_mock_auth
         uid: '123',
         info: {
           name: 'bob gu',
-          email: 'bobgu@example.com'
+          email: 'bobgu@example.com',
+          image: 'robert.png'
         },
         credentials: {
           token: 'mock_token',

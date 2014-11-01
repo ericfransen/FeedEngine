@@ -1,5 +1,5 @@
-class GitHubGoal < ActiveRecord::Base
-   belongs_to :user
+class GithubGoal < ActiveRecord::Base
+  belongs_to :user
 
   def get_the_json
     response =  Faraday.get("https://api.github.com/users/dglunz/events")
