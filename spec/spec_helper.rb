@@ -6,17 +6,26 @@ WebMock.disable_net_connect!(allow_localhost: true)
 body = [{
   id: '1',
   type: 'PushEvent',
+  payload: {
+    commits: ['poopin']
+  },
   created_at: Date.today
 },
 
 {
   id: '2',
   type: 'PushEvent',
+  payload: {
+    commits: ['poopin']
+  },
   created_at: Date.today - 1
 },
 
 { id: '3',
   type: 'PullRequestEvent',
+  payload: {
+    commits: ['poopin']
+  },
   created_at: Date.today
 }].to_json
 
