@@ -17,6 +17,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'omniauth-twitter'
 gem 'omniauth'
+gem 'whenever', require: false
 
 
 group :development, :test do
