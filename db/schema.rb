@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20141101180302) do
     t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "commit_goal"
+    t.integer  "commit_goal", default: 1
     t.integer  "user_id"
   end
 
