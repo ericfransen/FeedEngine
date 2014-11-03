@@ -19,10 +19,17 @@ class GithubGoal < ActiveRecord::Base
   end
 
   def start_date
-    Date.today # this only gets called when user starts goal
+    Date.today # this gets called the day they sign up
   end
 
-  def streak_count
-
+  def self.check_daily_goal
+    self.all.each do |github_goal|
+      if github_goal.daily_commit_count >= github_goal.commit_goal
+        github_goal.streak += 1
+      else
+        github_goal.streak = 0
+      end
+      # we may need to call github_goal.save here....not sure
+    end
   end
 end

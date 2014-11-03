@@ -19,6 +19,8 @@ gem 'omniauth-twitter'
 gem 'omniauth'
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'foundation-rails'
+gem 'whenever', require: false
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
