@@ -2,12 +2,14 @@ class SessionsController < ApplicationController
   def create
     user = User.find_or_create_by_auth(request.env['omniauth.auth'])
     session[:user_id] = user.id
-    redirect_to goals_path, notice: "You successfully logged in."
+    redirect_to goals_path
+    flash[:notice] =  "You successfully logged in."
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_path, notice: 'Thanks for logging out!'
+    redirect_to root_path
+    flash[:log_out] =  'Thanks for logging out!'
   end
 
   def failure
