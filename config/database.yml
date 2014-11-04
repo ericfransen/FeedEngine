@@ -25,28 +25,30 @@ production:
   <<: *default
   database: feed_engine_development
 
-# Database settings for the VPS
-# default: &default
+# Settings for VPS
+# development:
 #   adapter: postgresql
 #   encoding: unicode
+#   database: feed_engine_development
 #   host: localhost
 #   pool: 5
-#   timeout: 5000
-#
-# development:
-#   <<: *default
-#   database: deploy_development
 #   username: deployment
 #   password: password1
 #
 # test:
-#   <<: *default
-#   database: deploy_test
+#   adapter: postgresql
+#   encoding: unicode
+#   database: feed_engine_test
+#   host: localhost
+#   pool: 5
 #   username: deployment
 #   password: password1
 #
 # production:
-#   <<: *default
+#   adapter: postgresql
+#   encoding: unicode
 #   database: feed_engine
+#   host: localhost
+#   pool: 5
 #   username: deployment
 #   password: password1
