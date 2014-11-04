@@ -25,11 +25,23 @@ class GithubGoal < ActiveRecord::Base
   def self.check_daily_goal
     self.all.each do |github_goal|
       if github_goal.daily_commit_count >= github_goal.commit_goal
+        # this sets the current streak to add one to the current streak
         github_goal.streak += 1
+        github_goal.set_longest_streak
+        github_goal.save
       else
+        # this sets the current streak to 0
         github_goal.streak = 0
+        github_goal.save
       end
       # we may need to call github_goal.save here....not sure
     end
   end
+
+  def set_longest_streak
+    if streak > self.longest_streak
+      self.longest_streak = streak
+    end
+  end
+
 end
