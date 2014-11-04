@@ -12,4 +12,14 @@ class User < ActiveRecord::Base
     end
     user
   end
+
+  def high_res_profile
+    twitter_pic.sub "_normal", ""
+  end
+
+  def first_name
+    name.split(' ')[0]
+  end
+
+
 end

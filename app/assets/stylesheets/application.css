@@ -16,4 +16,6 @@
  *= require foundation_and_overrides
 
  */
+@import 'index';
+@import 'goals';
 @import 'welcome';
