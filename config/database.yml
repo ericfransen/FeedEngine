@@ -1,52 +1,27 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
-#
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  timeout: 5000
 
 development:
-  <<: *default
-  database: feed_engine_development
+  adapter: postgresql
+  encoding: unicode
+  database: feed_engine_development 
+  host: localhost
+  pool: 5
+  username: deployment
+  password: password1
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: feed_engine_test
+  host: localhost
+  pool: 5
+  username: deployment
+  password: password1
 
 production:
-  <<: *default
-  database: feed_engine_development
-
-# Database settings for the VPS
-# default: &default
-#   adapter: postgresql
-#   encoding: unicode
-#   host: localhost
-#   pool: 5
-#   timeout: 5000
-#
-# development:
-#   <<: *default
-#   database: deploy_development
-#   username: deployment
-#   password: password1
-#
-# test:
-#   <<: *default
-#   database: deploy_test
-#   username: deployment
-#   password: password1
-#
-# production:
-#   <<: *default
-#   database: feed_engine
-#   username: deployment
-#   password: password1
+  adapter: postgresql
+  encoding: unicode
+  database: feed_engine
+  host: localhost
+  pool: 5
+  username: deployment
+  password: password1

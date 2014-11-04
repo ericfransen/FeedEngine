@@ -2,11 +2,11 @@
   background-color: #ebebeb;
 }
 
-.top-bar{
+nav.top_bar_color{
   background-color: #7dbbc2;
 }
 
-.top-bar-section li:not(.has-form) a:not(.button) {
+section.top-bar-section li:not(.has-form) a:not(.button) {
   padding-left: 30px;
   background-color: #7dbbc2;
 }
@@ -148,7 +148,7 @@
   color: #F24B00;
 }
 
-.github_panel {
+div.github_panel {
   min-height: 40em;
   min-width: 40em;
   margin: auto;
