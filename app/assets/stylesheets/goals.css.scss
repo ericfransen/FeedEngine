@@ -1,3 +1,75 @@
 // Place all the styles related to the Goals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#coming_soon {
+  text-align: center;
+}
+
+#background {
+  background: #2f3f43;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.services {
+  border-radius: 5px;
+  padding: 10px;
+  // width: 60%;
+}
+
+#sidebar {
+  position: fixed;
+  padding: 0 20px 0 20px;
+  top: 45px;
+  bottom: 0px;
+  width: 250px;
+  margin:10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #d5f0f0;
+  text-align: center;
+
+}
+
+.profile_pic {
+  max-height: 75px;
+  max-width: 75px;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+}
+
+#github {
+  // float: left;
+  width: 60%;
+  height: 100%;
+  margin: 10px 0 0 270px;
+  background: #f5f5f5;
+}
+
+#mini_logo {
+  height: 50px;
+}
+
+#fitbit {
+  width: 60%;
+  height:206px;
+  margin: 10px 0 0 270px;
+  background: white;
+}
+
+#goodreads {
+  width: 60%;
+  height: 207px;
+  margin: 10px 0 0 270px;
+  background: #f0f0e4;
+}
+
+.progress {
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  
+}

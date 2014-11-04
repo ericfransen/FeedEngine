@@ -15,6 +15,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'unicorn'
 gem 'figaro'
 gem 'faraday'
+gem 'omniauth-twitter'
+gem 'omniauth'
+gem 'codeclimate-test-reporter', group: :test, require: nil
+gem 'foundation-rails'
+gem 'whenever', require: false
 
 
 group :development, :test do
@@ -23,6 +28,7 @@ group :development, :test do
   gem 'launchy'
   gem 'spring'
   gem 'pry'
+  gem 'better_errors'
   gem 'binding_of_caller'
   gem 'factory_girl_rails'
 end
@@ -38,11 +44,8 @@ group :development do
 end
 
 group :production do
-
+  gem "skylight"
 end
-
-gem 'codeclimate-test-reporter', group: :test, require: nil
-gem 'foundation-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

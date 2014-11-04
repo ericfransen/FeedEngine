@@ -11,9 +11,11 @@
  * file per style scope.
  *
  *= require_tree .
- *= require foundation 
+ *= require foundation
  *= require_self
  *= require foundation_and_overrides
 
  */
 @import 'index';
+@import 'goals';
+@import 'welcome';

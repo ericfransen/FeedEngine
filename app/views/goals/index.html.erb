@@ -1,4 +1,39 @@
-<div class="row">
-  <h1>Goals</h1>
-  <%= link_to 'Github Integration', new_github_goal_path, class: 'button' %>
+<div id="background">
+  <div id="sidebar">
+    <img src='<%= @twitter_pic %>' alt="Twitter Profile Pic" class="profile_pic">
+    <h5><%= @first_name %></h5>
+
+    <% if current_user.github_goals.count == 0 %>
+      <%= link_to 'GitHub Integration', new_github_goal_path, class: 'button' %>
+    <% end %>
+    <%= link_to 'FitBit Integration', '#', class: 'button' %>
+    <%= link_to 'GoodReads Int.', '#', class: 'button' %>
+
+
+  </div>
+
+  <div class="row services" id="github">
+    <img src='/assets/github.png' alt="GitHub" id="mini_logo">
+    <h5>Daily commit goal: <%= @current_github_goal %></h5>
+    <h5>Commits today: <%= @todays_commits %></h5>
+    <h5>Progress: </h5>
+    <% if current_user.github_goals.count > 0 %>
+      <div class="progress alert">
+        <span class="meter" style="width: <%= @daily_progress %>%"><%= @daily_progress %>%</span>
+      </div>
+    <% end %>
+    <h5>Current Streak:  <%= @current_streak %> | Longest Streak: <%= @longest_streak %> </h5>
+
+
+  </div>
+  <!-- this code below if for the other panels of our dashboard but commented out for our assesment -->
+  <!-- <div class="row services" id="fitbit">
+    <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
+    <div id="coming_soon">COMING SOON</div>
+  </div>
+
+  <div class="row services" id="goodreads">
+    <img src='/assets/good_reads.png' alt="GoodReads" id="mini_logo">
+    <div id="coming_soon">COMING SOON</div>
+  </div> -->
 </div>

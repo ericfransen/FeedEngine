@@ -1,0 +1,26 @@
+<!-- <div class="sticky"> -->
+  <nav class='top-bar top_bar_color' data-topbar role='navigation'>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1><%= link_to 'Successive Life', root_path %></h1>
+      </li>
+    </ul>
+
+    <section class='top-bar-section'>
+      <ul class='right'>
+        <% if current_user %>
+          <li><%= link_to 'Log Out', logout_path %>
+          <li class="has-dropdown"><%= link_to 'My Goals', goals_path %>
+            <% if current_user.github_goals.count >= 1 %>
+              <ul class="dropdown">
+                <li><%= link_to 'GitHub Settings', edit_github_goal_path(current_user.github_goals.first) %></li>
+              </ul>
+            <% end %>
+          </li>
+        <% else %>
+          <li><%= link_to 'Log In', login_path %>
+        <% end %>
+      </ul>
+    </section>
+  </nav>
+<!-- </div> -->
