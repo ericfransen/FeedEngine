@@ -15,7 +15,7 @@
 
 
   <body>
-    <%= render partial: 'layouts/navbar' %>
+    <%= render partial: 'layouts/navbar', :locals => { :github_goal => @github_goal } %>
     <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>

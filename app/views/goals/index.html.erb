@@ -3,8 +3,9 @@
     <img src='<%= @twitter_pic %>' alt="Twitter Profile Pic" class="profile_pic">
     <h5><%= @first_name %></h5>
 
-
-    <%= link_to 'GitHub Integration', new_github_goal_path, class: 'button' %>
+    <% if current_user.github_goals.count == 0 %>
+      <%= link_to 'GitHub Integration', new_github_goal_path, class: 'button' %>
+    <% end %>
     <%= link_to 'FitBit Integration', '#', class: 'button' %>
     <%= link_to 'GoodReads Int.', '#', class: 'button' %>
 
@@ -17,14 +18,7 @@
     <h5>Commits Today: X</h5>
     <h5>X% of Today's Goal Met</h5>
     <h5>Current Streak: X Days | Longest Streak: X Days</h5>
-
     <!-- <h5>Most Prolific @: 3-4 PM | Tuesdays</h5> -->
-
-    <!-- <h3>GitHub</h3> -->
-    <!-- <ul class="stack-for-small round secondary button-group">
-      <li><a href="#" class="button">Daily</a></li>
-      <li><a href="#" class="button">Weekly</a></li>
-    </ul> -->
   </div>
 
   <div class="row services" id="fitbit">
