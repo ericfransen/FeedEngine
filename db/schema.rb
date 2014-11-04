@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104025037) do
+ActiveRecord::Schema.define(version: 20141104043516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20141104025037) do
     t.datetime "updated_at"
     t.integer  "commit_goal",    default: 1
     t.integer  "user_id"
-    t.integer  "streak"
+    t.integer  "streak",         default: 0
     t.integer  "longest_streak", default: 0
   end
 
