@@ -17,3 +17,6 @@
 
 # Ignore application configuration
 /config/application.yml
+
+#Ignore Skylight authentication
+/config/skylight.yml
