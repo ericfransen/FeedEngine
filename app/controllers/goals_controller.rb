@@ -5,6 +5,7 @@ class GoalsController < ApplicationController
       @todays_commits = current_user.github_goals.last.daily_commit_count
       @current_streak = current_user.github_goals.last.streak
       @longest_streak = current_user.github_goals.last.longest_streak
+      @daily_progress = current_user.github_goals.last.daily_progress
     end
     @first_name = current_user.first_name
     @twitter_pic = current_user.high_res_profile

@@ -18,6 +18,14 @@ class GithubGoal < ActiveRecord::Base
     daily_events.inject(0) { |sum, event| sum + event["payload"]["commits"].count }
   end
 
+  def daily_progress
+    if daily_commit_count > commit_goal
+      100
+    else
+      (daily_commit_count.to_f/commit_goal.to_f) * 100
+    end
+  end
+
   def start_date
     Date.today # this gets called the day they sign up
   end

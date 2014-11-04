@@ -15,28 +15,22 @@
     <img src='/assets/github.png' alt="GitHub" id="mini_logo">
     <h5>Current Goal: <%= @current_github_goal %></h5>
     <h5>Commits Today: <%= @todays_commits %></h5>
-    <h5>X% of Today's Goal Met</h5>
+    <h5><%= @daily_progress %>% of Today's Goal Met</h5>
+    <div class="progress alert">
+      <span class="meter" style="width: <%= @daily_progress %>%"></span>
+    </div>
     <h5>Current Streak:  <%= @current_streak %> | Longest Streak: <%= @longest_streak %> </h5>
 
-    <!-- <h5>Most Prolific @: 3-4 PM | Tuesdays</h5> -->
 
-    <!-- <h3>GitHub</h3> -->
-    <!-- <ul class="stack-for-small round secondary button-group">
-      <li><a href="#" class="button">Daily</a></li>
-      <li><a href="#" class="button">Weekly</a></li>
-    </ul> -->
   </div>
-
-  <div class="row services" id="fitbit">
+  <!-- this code below if for the other panels of our dashboard but commented out for our assesment -->
+  <!-- <div class="row services" id="fitbit">
     <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
     <div id="coming_soon">COMING SOON</div>
-    <!-- <h3>GoodReads</h3> -->
   </div>
 
   <div class="row services" id="goodreads">
     <img src='/assets/good_reads.png' alt="GoodReads" id="mini_logo">
     <div id="coming_soon">COMING SOON</div>
-
-    <!-- <h3>FitBit</h3> -->
-  </div>
+  </div> -->
 </div>
