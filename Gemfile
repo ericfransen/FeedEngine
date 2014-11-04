@@ -43,7 +43,7 @@ group :development do
 end
 
 group :production do
-
+  gem "skylight"
 end
 
 # Use ActiveModel has_secure_password
