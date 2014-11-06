@@ -1,55 +1,20 @@
+default: &default
+ adapter: postgresql
+ encoding: unicode
+ pool: 5
+ timeout: 5000
 
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: feed_engine_development 
-  host: localhost
-  pool: 5
-  username: deployment
-  password: password1
+ <<: *default
+ database: feed_engine_development
 
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: feed_engine_test
-  host: localhost
-  pool: 5
-  username: deployment
-  password: password1
+ <<: *default
+ database: feed_engine_test
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: feed_engine
-  host: localhost
-  pool: 5
-  username: deployment
-  password: password1
-
-# Settings for VPS
-# development:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: feed_engine_development
-#   host: localhost
-#   pool: 5
-#   username: deployment
-#   password: password1
-#
-# test:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: feed_engine_test
-#   host: localhost
-#   pool: 5
-#   username: deployment
-#   password: password1
-#
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: feed_engine
-#   host: localhost
-#   pool: 5
-#   username: deployment
-#   password: password1
+ <<: *default
+ database: feed_engine_development
