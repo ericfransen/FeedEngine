@@ -11,5 +11,11 @@ class GoalsController < ApplicationController
 
       @first_name = current_user.first_name
       @twitter_pic = current_user.high_res_profile
+      @fitbit = current_user.oauth_accounts.select do |account|
+        account.provider == 'fitbit'
+      end
   end
+
+
+
 end

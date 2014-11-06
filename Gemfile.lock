@@ -101,6 +101,9 @@ GEM
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
+    omniauth-fitbit (1.0.4)
+      multi_xml
+      omniauth-oauth (~> 1.0)
     omniauth-goodreads (0.1.3)
       omniauth-goodreads
     omniauth-oauth (1.0.1)
@@ -227,6 +230,7 @@ DEPENDENCIES
   launchy
   multi_xml
   omniauth
+  omniauth-fitbit
   omniauth-goodreads
   omniauth-twitter
   pg
