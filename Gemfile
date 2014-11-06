@@ -16,17 +16,19 @@ gem 'unicorn'
 gem 'figaro'
 gem 'faraday'
 gem 'omniauth-twitter'
+gem 'omniauth-goodreads'
 gem 'omniauth'
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'foundation-rails'
 gem 'whenever', require: false
+gem 'multi_xml'
 
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'capybara'
   gem 'launchy'
-  gem 'spring'
+  # gem 'spring'
   gem 'pry'
   gem 'better_errors'
   gem 'binding_of_caller'

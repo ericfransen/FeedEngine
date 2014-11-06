@@ -4,4 +4,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   else
     provider :twitter, 'jpachkf9nkUmZJD93pzAWqIOn', '6ARBasFb020lxJGlDCijtoG1hw2XBHUBEgCsY8h2kJi65OXlqx'
   end
+
+  provider :goodreads, ENV['goodreads_key'], ENV['goodreads_secret']
+
 end

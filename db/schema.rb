@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104043516) do
+ActiveRecord::Schema.define(version: 20141106173142) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,10 +20,23 @@ ActiveRecord::Schema.define(version: 20141104043516) do
     t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "commit_goal",    default: 1
+    t.integer  "commit_goal"
     t.integer  "user_id"
     t.integer  "streak",         default: 0
     t.integer  "longest_streak", default: 0
+  end
+
+  create_table "oauth_accounts", force: true do |t|
+    t.string   "oauth_accounts"
+    t.string   "goodreads_token"
+    t.string   "goodreads_secret"
+    t.string   "github_token"
+    t.string   "github_secret"
+    t.string   "fitbit_token"
+    t.string   "fitbit_secret"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|
