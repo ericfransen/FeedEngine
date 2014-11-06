@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
     name.split(' ')[0]
   end
 
-  def add_goodreads(data)
+  def add_oauth_account(data)
     oauth_account = OauthAccount.find_or_initialize_by(provider: data["provider"])
     unless oauth_account.persisted? && oauth_account.provider == data['provider']
       oauth_account.user_id = self.id
@@ -31,4 +31,5 @@ class User < ActiveRecord::Base
       oauth_account.save
     end
   end
+
 end

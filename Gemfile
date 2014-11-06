@@ -22,7 +22,7 @@ gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'foundation-rails'
 gem 'whenever', require: false
 gem 'multi_xml'
-
+gem 'omniauth-fitbit'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
