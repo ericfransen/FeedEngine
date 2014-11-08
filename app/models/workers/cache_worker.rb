@@ -1,0 +1,3 @@
+class CacheWorker
+
+end
