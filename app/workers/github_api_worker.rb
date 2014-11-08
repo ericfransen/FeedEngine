@@ -1,5 +1,6 @@
 class GithubApiWorker
   include Sidekiq::Worker
+  sidekiq_options retry: 2
 
   def perform(user_id)
     github_goal = GithubGoal.find_by(user_id: user_id)
