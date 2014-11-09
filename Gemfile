@@ -23,6 +23,7 @@ gem 'foundation-rails'
 gem 'whenever', require: false
 gem 'multi_xml'
 gem 'omniauth-fitbit'
+gem 'omniauth-github'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
