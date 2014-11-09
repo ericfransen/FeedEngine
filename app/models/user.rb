@@ -28,9 +28,7 @@ class User < ActiveRecord::Base
       binding.pry
       oauth_account.user_id = self.id
       oauth_account.token   = data['credentials']['token']
-        if data['provider'] != 'github'
-          oauth_account.secret  = data['credentials']['secret']
-        end
+      oauth_account.secret  = data['credentials']['secret']
       oauth_account.save
     end
   end
