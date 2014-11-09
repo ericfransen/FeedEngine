@@ -15,6 +15,7 @@ describe 'github goals', :type => :feature do
     it 'can start a github goal' do
       click_link_or_button "GitHub Integration"
       expect(current_path).to eq new_github_goal_path
+      save_and_open_page
       expect(page).to have_selector(:link_or_button, 'Create Goal')
     end
 

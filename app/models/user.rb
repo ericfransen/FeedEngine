@@ -25,9 +25,12 @@ class User < ActiveRecord::Base
   def add_oauth_account(data)
     oauth_account = OauthAccount.find_or_initialize_by(provider: data["provider"])
     unless oauth_account.persisted? && oauth_account.provider == data['provider']
+      binding.pry
       oauth_account.user_id = self.id
       oauth_account.token   = data['credentials']['token']
-      oauth_account.secret  = data['credentials']['secret']
+        if data['provider'] != 'github'
+          oauth_account.secret  = data['credentials']['secret']
+        end
       oauth_account.save
     end
   end
