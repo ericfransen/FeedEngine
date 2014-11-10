@@ -25,6 +25,9 @@ gem 'multi_xml'
 gem 'omniauth-fitbit'
 gem 'omniauth-github'
 gem 'better_errors'
+gem 'sidekiq'
+
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'capybara'
