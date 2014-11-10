@@ -5,7 +5,10 @@ class GoalsController < ApplicationController
       @todays_commits = current_user.github_goals.last.daily_commit_count
       @current_streak = current_user.github_goals.last.streak
       @longest_streak = current_user.github_goals.last.longest_streak
-      @daily_progress = current_user.github_goals.last.daily_progress
+      @daily_progress = current_user.github_goals.last.progress
+      if current_user.github_token?
+        GithubWorker.perform_async(current_user.id)
+      end
     end
       @github_goal = GithubGoal.find_by(user_id: current_user.id)
 
