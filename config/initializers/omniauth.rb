@@ -8,5 +8,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   end
 
   provider :goodreads, ENV['goodreads_key'], ENV['goodreads_secret']
+  provider :github, '16d9d7f931c5eb4f19c3', 'f78406d4b6d5a4e3abf9921e0aad80a4faaf8d5d'
+
 
 end

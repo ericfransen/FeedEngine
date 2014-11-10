@@ -6,8 +6,6 @@
   <div class = 'github-goal-edit'>
 
     <%= form_for @github_goal do |f| %>
-      <%= f.label :username %>
-      <%= f.text_field :username %>
       <%= f.label :number_of_commits %>
       <%= f.select :commit_goal, (1..10).to_a %>
       <%= f.submit 'Create Goal', class: 'button' %>

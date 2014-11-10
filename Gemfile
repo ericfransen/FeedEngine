@@ -23,14 +23,14 @@ gem 'foundation-rails'
 gem 'whenever', require: false
 gem 'multi_xml'
 gem 'omniauth-fitbit'
-
+gem 'omniauth-github'
+gem 'better_errors'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'capybara'
   gem 'launchy'
   # gem 'spring'
   gem 'pry'
-  gem 'better_errors'
   gem 'binding_of_caller'
   gem 'factory_girl_rails'
 end
