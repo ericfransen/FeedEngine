@@ -26,6 +26,8 @@ gem 'omniauth-fitbit'
 gem 'omniauth-github'
 gem 'better_errors'
 gem 'sidekiq'
+gem 'octokit'
+
 
 
 group :development, :test do

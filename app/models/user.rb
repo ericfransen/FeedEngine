@@ -28,8 +28,13 @@ class User < ActiveRecord::Base
       oauth_account.user_id = self.id
       oauth_account.token   = data['credentials']['token']
       oauth_account.secret  = data['credentials']['secret']
+      oauth_account.nickname = data['info']['nickname']
       oauth_account.save
     end
+  end
+
+  def github_token?
+    self.oauth_accounts.find_by(provider: 'github').token
   end
 
 end

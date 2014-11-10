@@ -2,7 +2,9 @@ class GithubGoal < ActiveRecord::Base
   belongs_to :user
 
   def get_the_json
-    response =  Faraday.get("https://api.github.com/user?access_token=#{self.user.oauth_accounts.find_by(provider: 'github').token}")
+    # client = Octokit::Client.new(access_token: self.user.oauth_accounts.find_by(provider: 'github').token)
+
+  response =  Faraday.get("https://api.github.com/users/#{self.user.oauth_accounts.find_by(provider: 'github').nickname}/events")
     JSON.parse(response.body)
   end
 
