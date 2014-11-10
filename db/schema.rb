@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141106182556) do
+ActiveRecord::Schema.define(version: 20141110002424) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20141106182556) do
     t.integer  "user_id"
     t.integer  "streak",         default: 0
     t.integer  "longest_streak", default: 0
+    t.integer  "commit_count"
+    t.float    "progress"
   end
 
   create_table "oauth_accounts", force: true do |t|
