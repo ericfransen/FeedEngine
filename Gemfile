@@ -27,8 +27,7 @@ gem 'omniauth-github'
 gem 'better_errors'
 gem 'sidekiq'
 gem 'octokit'
-
-
+gem 'fitgem'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
