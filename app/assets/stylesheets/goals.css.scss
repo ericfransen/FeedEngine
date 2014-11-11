@@ -10,13 +10,12 @@
   background: #2f3f43;
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
 .services {
   border-radius: 5px;
   padding: 10px;
-  // width: 60%;
+  width: 60%;
 }
 
 #sidebar {
@@ -25,7 +24,7 @@
   top: 45px;
   bottom: 0px;
   width: 250px;
-  margin:10px;
+  margin:20px;
   padding: 10px;
   border-radius: 5px;
   background: #d5f0f0;
@@ -41,23 +40,13 @@
   -moz-border-radius: .5rem;
 }
 
-#github {
-  // float: left;
-  width: 60%;
-  height: 100%;
-  margin: 10px 0 0 270px;
-  background: #f5f5f5;
-}
 
 #mini_logo {
   height: 50px;
 }
 
-#fitbit {
-  width: 60%;
-  height:206px;
-  margin: 10px 0 0 270px;
-  background: white;
+#fitbit-panel {
+  padding-top: 10px;
 }
 
 #goodreads {
@@ -71,5 +60,13 @@
   text-align: center;
   color: white;
   font-size: 0.8em;
-  
+
+}
+
+.github {
+  margin-top: 20px;
+}
+
+.panel {
+  margin-right: 1.8em;
 }
