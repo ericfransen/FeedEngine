@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   validates :name, :twitter_pic, presence: true
   has_many :github_goals
+  has_one :fitbit_goal
   has_many :oauth_accounts
 
   def self.find_or_create_by_auth(auth_data)
@@ -28,6 +29,7 @@ class User < ActiveRecord::Base
       oauth_account.user_id = self.id
       oauth_account.token   = data['credentials']['token']
       oauth_account.secret  = data['credentials']['secret']
+      oauth_account.uid     = data['uid']
       oauth_account.save
     end
   end

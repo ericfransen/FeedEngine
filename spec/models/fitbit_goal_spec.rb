@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe FitbitGoal, :type => :model do
-  
-
+describe FitbitGoal, :type => :model do
+  it {should belong_to :user }
 end

@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'github_api_helper'
 
 describe GithubGoal, type: :model do
   it {should belong_to :user }

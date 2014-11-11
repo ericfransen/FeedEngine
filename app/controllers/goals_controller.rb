@@ -7,13 +7,21 @@ class GoalsController < ApplicationController
       @longest_streak = current_user.github_goals.last.longest_streak
       @daily_progress = current_user.github_goals.last.daily_progress
     end
+
+
+
       @github_goal = GithubGoal.find_by(user_id: current_user.id)
 
       @first_name = current_user.first_name
       @twitter_pic = current_user.high_res_profile
       @fitbit = current_user.oauth_accounts.select do |account|
         account.provider == 'fitbit'
-      end
+    end
+
+    if current_user.fitbit_goal
+      @fitbit_steps = current_user.fitbit_goal.daily_steps_goal 
+    end
+
   end
 
 

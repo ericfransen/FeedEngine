@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy', as: :logout
   get '/auth/twitter/callback', to: 'sessions#create'
   get '/auth/failure', to: 'sessions#failure'
-  get '/auth/fitbit/callback', to: 'fitbit#save'
+  get '/auth/fitbit/callback', to: 'fitbit#create'
 
 end
