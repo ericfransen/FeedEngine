@@ -16,13 +16,11 @@ describe GithubGoal, type: :model do
     end
   end
 
-  it 'can retrieve push events for today' d
-    VCR.use_cassete(:githubapi) do
-      daily_events = github_goal.daily_events
-      daily_events.each do |event|
-        expect(event['id']).to eq('1')
-        expect(event['id']).to_not eq('2')
-      end
+  it 'can retrieve push events for today' do
+    daily_events = github_goal.daily_events
+    daily_events.each do |event|
+      expect(event['id']).to eq('1')
+      expect(event['id']).to_not eq('2')
     end
   end
 
