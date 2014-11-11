@@ -33,6 +33,13 @@
   <div class="row services" id="fitbit">
     <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
     <div id="coming_soon">Steps Goal:<%= @fitbit_steps %></div>
+    <div>Today's Steps:<%= @todays_steps %></div>
+    <div>Today's Distance:<%= @todays_distance  %></div>
+    <% if current_user.fitbit_goal %>
+      <div class="progress alert">
+        <span class="meter" style="width: <%= @progress %>%"><%= @progress%>%</span>
+      </div>
+    <% end %>
   </div>
 
 </div>

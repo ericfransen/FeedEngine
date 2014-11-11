@@ -19,7 +19,10 @@ class GoalsController < ApplicationController
     end
 
     if current_user.fitbit_goal
-      @fitbit_steps = current_user.fitbit_goal.daily_steps_goal 
+      @fitbit_steps    = current_user.fitbit_goal.daily_steps_goal
+      @todays_steps    = current_user.fitbit_goal.todays_steps
+      @todays_distance = current_user.fitbit_goal.todays_distance
+      @progress        = current_user.fitbit_goal.progress
     end
 
   end

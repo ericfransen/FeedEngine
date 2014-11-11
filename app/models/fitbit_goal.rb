@@ -19,4 +19,20 @@ class FitbitGoal < ActiveRecord::Base
     todays_activities["goals"]["steps"]
   end
 
+  def todays_steps
+    todays_activities['summary']['steps']
+  end
+
+  def todays_distance
+    todays_activities['summary']['distances'][0]['distance']
+  end
+
+  def progress
+    if todays_steps > daily_steps_goal
+      100
+    else
+      (todays_steps.to_f/daily_steps_goal.to_f) * 100
+    end
+  end
+
 end
