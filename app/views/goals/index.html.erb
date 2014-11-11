@@ -8,8 +8,6 @@
     <% end %>
     <% if @fitbit.count < 1 %>
       <%= link_to 'FitBit Integration', fitbit_path, class: 'button' %>
-    <% else %>
-      <%= link_to 'FitBit Settings', '#', class: 'button' %>
     <% end %>
     <%= link_to 'GoodReads Int.', new_goodread_path, class: 'button' %>
 
