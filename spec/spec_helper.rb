@@ -3,14 +3,31 @@ require 'JSON'
 
 WebMock.disable_net_connect!(allow_localhost: true)
 
-body = [{
-  id: '1',
-  type: 'PushEvent',
-  payload: {
-    commits: ['poopin']
-  },
-  created_at: Date.today
-},
+body = [{"id"=>"1",
+  "type"=>"PushEvent",
+  "actor"=>
+   {"id"=>7582765,
+    "login"=>"121watts",
+    "gravatar_id"=>"",
+    "url"=>"https://api.github.com/users/121watts",
+    "avatar_url"=>"https://avatars.githubusercontent.com/u/7582765?"},
+  "repo"=>
+   {"id"=>25877143, "name"=>"ericfransen/successive_life", "url"=>"https://api.github.com/repos/ericfransen/successive_life"},
+  "payload"=>
+   {"push_id"=>499137559,
+    "size"=>1,
+    "distinct_size"=>1,
+    "ref"=>"refs/heads/master",
+    "head"=>"55460598519b9ee7d04167249530208e3a67b6e3",
+    "before"=>"61c4f473f7f40329f1bc0f261ee8d32fabaf3591",
+    "commits"=>
+     [{"sha"=>"55460598519b9ee7d04167249530208e3a67b6e3",
+       "author"=>{"email"=>"andrew.watkinz@gmail.com", "name"=>"Danny Glunz"},
+       "message"=>"adds production secrets for github",
+       "distinct"=>true,
+       "url"=>"https://api.github.com/repos/ericfransen/successive_life/commits/55460598519b9ee7d04167249530208e3a67b6e3"}]},
+  "public"=>true,
+  "created_at"=> Date.today },
 
 {
   id: '2',
