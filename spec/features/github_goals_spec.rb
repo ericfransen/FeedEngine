@@ -42,11 +42,20 @@ describe 'github goals', :type => :feature do
     end
 
     it 'can edit goal' do
-      github_goal = FactoryGirl.create(:github_goal, user_id: user.id)
-      visit goals_path
+      goals = GithubGoal.all
+      expect(goals.count).to eq(0)
+      visit new_github_goal_path
+      find('#github_goal_commit_goal').find(:xpath, 'option[4]').select_option
+      click_on('Create Goal')
+      goal = GithubGoal.first
+      expect(goal.commit_goal).to eq(4)
+      expect(goals.count).to eq(1)
+      expect(current_path).to eq goals_path
+
+
       expect(page).to_not have_content('GitHub Integration')
-      click_link_or_button('GitHub Settings')
-      expect(current_path).to eq edit_github_goal_path(github_goal)
+      page.find('#sidebar').click_on('GitHub Settings')
+      expect(current_path).to eq edit_github_goal_path(goal)
 
       find('#github_goal_commit_goal').find(:xpath, 'option[2]').select_option
       click_on('Create Goal')
