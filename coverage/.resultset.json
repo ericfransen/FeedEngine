@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/support/omniauth.rb": [
+      "/Users/gustavo/turing/successive_life/spec/support/omniauth.rb": [
         1,
         6,
         null,
@@ -37,7 +37,7 @@
         6,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/api/v1/github_goals_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/api/v1/github_goals_controller.rb": [
         1,
         null,
         1,
@@ -51,7 +51,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/application_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -66,14 +66,14 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/controllers/githubs_controller_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/controllers/githubs_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/githubs_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/githubs_controller.rb": [
         1,
         1,
         1,
@@ -82,14 +82,14 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/controllers/goodreads_controller_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/controllers/goodreads_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/goodreads_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/goodreads_controller.rb": [
         1,
         null,
         null,
@@ -105,7 +105,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/features/github_goals_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/features/github_goals_spec.rb": [
         1,
         null,
         1,
@@ -174,7 +174,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/features/twitter_oauth_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/features/twitter_oauth_spec.rb": [
         1,
         null,
         1,
@@ -198,7 +198,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/features/user_login_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/features/user_login_spec.rb": [
         1,
         null,
         1,
@@ -208,10 +208,10 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/features/user_logout_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/features/user_logout_spec.rb": [
 
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/helpers/api/v1/github_goals_helper_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/helpers/api/v1/github_goals_helper_spec.rb": [
         1,
         null,
         null,
@@ -228,14 +228,14 @@
         1,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/models/fitbit_goal_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/models/fitbit_goal_spec.rb": [
         1,
         null,
         1,
         2,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/models/fitbit_goal.rb": [
+      "/Users/gustavo/turing/successive_life/app/models/fitbit_goal.rb": [
         1,
         null,
         1,
@@ -275,7 +275,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/models/github_goal_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/models/github_goal_spec.rb": [
         1,
         1,
         null,
@@ -337,10 +337,10 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/github_api_helper.rb": [
+      "/Users/gustavo/turing/successive_life/spec/github_api_helper.rb": [
 
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/models/github_goal.rb": [
+      "/Users/gustavo/turing/successive_life/app/models/github_goal.rb": [
         1,
         1,
         null,
@@ -408,7 +408,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/models/user_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/models/user_spec.rb": [
         1,
         2,
         2,
@@ -416,7 +416,7 @@
         2,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/models/user.rb": [
+      "/Users/gustavo/turing/successive_life/app/models/user.rb": [
         1,
         1,
         1,
@@ -462,7 +462,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/requests/github_goals_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/requests/github_goals_spec.rb": [
         null,
         1,
         1,
@@ -486,7 +486,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/spec/workers/github_api_worker_spec.rb": [
+      "/Users/gustavo/turing/successive_life/spec/workers/github_api_worker_spec.rb": [
         1,
         1,
         1,
@@ -494,7 +494,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/workers/github_worker.rb": [
+      "/Users/gustavo/turing/successive_life/app/workers/github_worker.rb": [
         1,
         1,
         1,
@@ -507,13 +507,13 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/welcome_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/welcome_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/sessions_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/sessions_controller.rb": [
         1,
         1,
         6,
@@ -534,7 +534,7 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/goals_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/goals_controller.rb": [
         1,
         1,
         14,
@@ -571,12 +571,12 @@
         null,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/models/oauth_account.rb": [
+      "/Users/gustavo/turing/successive_life/app/models/oauth_account.rb": [
         1,
         1,
         null
       ],
-      "/Users/Persistence/Copy/Projects/rails-fun/successive_life/app/controllers/github_goals_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/github_goals_controller.rb": [
         1,
         null,
         1,
@@ -617,6 +617,6 @@
         null
       ]
     },
-    "timestamp": 1415830595
+    "timestamp": 1415834451
   }
 }
