@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20141112142058) do
   add_index "fitbit_goals", ["user_id"], name: "index_fitbit_goals_on_user_id", using: :btree
 
   create_table "github_goals", force: true do |t|
-    t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "commit_goal",    default: 1

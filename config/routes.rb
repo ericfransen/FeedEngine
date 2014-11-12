@@ -2,7 +2,14 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :goals, only: [:index]
   resources :github_goals
-  # resources :goodreads, except: [:create, ]
+
+
+  namespace 'api' do
+    namespace 'v1' do
+      resources :github_goals, only: [:index, :show]
+    end
+  end
+
 
   get '/login'     => redirect('/auth/twitter'), as: :login
   get '/goodreads' => redirect('/auth/goodreads'), as: :new_goodread
