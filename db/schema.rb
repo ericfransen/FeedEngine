@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141112142058) do
+ActiveRecord::Schema.define(version: 20141112204807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20141112142058) do
   add_index "fitbit_goals", ["user_id"], name: "index_fitbit_goals_on_user_id", using: :btree
 
   create_table "github_goals", force: true do |t|
+    t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "commit_goal",    default: 1
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(version: 20141112142058) do
     t.integer "user_id"
     t.string  "nickname"
     t.string  "uid"
+    t.string  "name"
   end
 
   add_index "oauth_accounts", ["provider"], name: "index_oauth_accounts_on_provider", using: :btree
