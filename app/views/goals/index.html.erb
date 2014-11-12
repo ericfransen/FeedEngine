@@ -24,7 +24,7 @@
       <h5>Progress: </h5>
       <% if current_user.github_goals.count > 0 %>
         <div class="progress alert">
-          <span class="meter" style="width: <%= @daily_progress %>%"><%= @daily_progress %>%</span>
+          <span class="meter" style="width: <%= @daily_progress %>%"><%= @daily_progress.to_i %>%</span>
         </div>
       <% end %>
       <h5>Current Streak:  <%= @current_streak %> | Longest Streak: <%= @longest_streak %> </h5>
