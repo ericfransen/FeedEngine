@@ -1,11 +1,13 @@
 require 'rails_helper'
+require 'github_api_helper'
 
 describe GithubGoal, type: :model do
   it {should belong_to :user }
 
 
-
-  let!(:github_goal) { GithubGoal.create(username: 'dglunz', commit_goal: 1, streak: 2, longest_streak: 2)}
+  let!(:user) { FactoryGirl.create(:user) }
+  let!(:github_goal) { GithubGoal.create(username: 'dglunz', commit_goal: 1, streak: 2, longest_streak: 2, user_id: user.id)}
+  let!(:oauth_account) { FactoryGirl.create(:oauth_account, user_id: user.id, provider: 'github')}
 
   it 'can retrieve push events' do
     push_events = github_goal.push_events

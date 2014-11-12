@@ -23,6 +23,12 @@ gem 'foundation-rails'
 gem 'whenever', require: false
 gem 'multi_xml'
 gem 'omniauth-fitbit'
+gem 'omniauth-github'
+gem 'better_errors'
+gem 'sidekiq'
+gem 'octokit'
+gem 'fitgem'
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
@@ -30,7 +36,6 @@ group :development, :test do
   gem 'launchy'
   # gem 'spring'
   gem 'pry'
-  gem 'better_errors'
   gem 'binding_of_caller'
   gem 'factory_girl_rails'
 end
@@ -42,7 +47,9 @@ group :test do
 end
 
 group :development do
-  # gem 'debugger'
+  gem 'rack-mini-profiler'
+  gem 'faker'
+  gem 'populator'
 end
 
 group :production do

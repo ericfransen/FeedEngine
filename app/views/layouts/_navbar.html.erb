@@ -14,6 +14,7 @@
             <% if current_user.github_goals.count >= 1 %>
               <ul class="dropdown">
                 <li><%= link_to 'GitHub Settings', edit_github_goal_path(current_user.github_goals.first) %></li>
+                <li><%= link_to 'FitBit Settings', '#' %></li>
               </ul>
             <% end %>
           </li>
