@@ -29,6 +29,7 @@ gem 'sidekiq'
 gem 'octokit'
 gem 'fitgem'
 
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'capybara'
@@ -46,7 +47,9 @@ group :test do
 end
 
 group :development do
-  # gem 'debugger'
+  gem 'rack-mini-profiler'
+  gem 'faker'
+  gem 'populator'
 end
 
 group :production do
