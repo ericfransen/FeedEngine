@@ -20,3 +20,6 @@
 
 #Ignore Skylight authentication
 /config/skylight.yml
+
+# Ignore api response with server token
+/fixtures/vcr_cassettes/*.yml

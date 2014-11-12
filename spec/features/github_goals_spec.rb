@@ -53,17 +53,18 @@ describe 'github goals', :type => :feature do
     end
 
     it 'can edit goal' do
-      github_goal = FactoryGirl.create(:github_goal, user_id: user.id)
-      visit goals_path
-      expect(page).to_not have_content('GitHub Integration')
-      click_link_or_button('GitHub Settings')
-      expect(current_path).to eq edit_github_goal_path(github_goal)
+      VCR.use_cassette('github_commit_goal') do
+        github_goal = FactoryGirl.create(:github_goal, user_id: user.id)
+        visit goals_path
+        expect(page).to_not have_content('GitHub Integration')
+        click_link_or_button('GitHub Settings')
+        expect(current_path).to eq edit_github_goal_path(github_goal)
 
-      find('#github_goal_commit_goal').find(:xpath, 'option[2]').select_option
-      click_on('Create Goal')
-      expect(current_path).to eq goals_path
-      expect(user.github_goals.last.commit_goal).to eq 2
-
+        find('#github_goal_commit_goal').find(:xpath, 'option[2]').select_option
+        click_on('Create Goal')
+        expect(current_path).to eq goals_path
+        expect(user.github_goals.last.commit_goal).to eq 2
+      end
     end
   end
 end

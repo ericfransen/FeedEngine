@@ -1,7 +1,15 @@
 require 'webmock/rspec'
 require 'JSON'
+require 'vcr'
 
 # WebMock.disable_net_connect!(allow_localhost: true)
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'fixtures/vcr_cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+end
+
 WebMock.allow_net_connect!
 
 body = [{

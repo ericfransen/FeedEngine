@@ -12,7 +12,7 @@ describe GithubGoal, type: :model do
     push_events.each do |event|
       expect(event['type']).to eq('PushEvent')
     end
-  end
+  end 
 
   it 'can retrieve push events for today' do
     daily_events = github_goal.daily_events
