@@ -28,7 +28,6 @@ class User < ActiveRecord::Base
     unless oauth_account.persisted? && oauth_account.token == data['credentials']["token"]
       oauth_account.user_id = self.id
       oauth_account.name     = data['info']['name']
-      binding.pry
       oauth_account.token    = data['credentials']['token']
       oauth_account.secret   = data['credentials']['secret']
       oauth_account.nickname = data['info']['nickname']
