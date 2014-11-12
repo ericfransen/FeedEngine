@@ -17,13 +17,13 @@
   </div>
   <div class="row">
     <div class="medium-3 columns"></div>
-    <div class="medium-8 columns panel radius github">
+    <div class="medium-9 large-9 columns panel radius github">
       <img src='/assets/github.png' alt="GitHub" id="mini_logo">
       <h5>Daily commit goal: <%= @current_github_goal %></h5>
       <h5>Commits today: <%= @todays_commits %></h5>
       <h5>Progress: </h5>
       <% if current_user.github_goals.count > 0 %>
-        <div class="progress alert">
+        <div class="progress success radius round">
           <span class="meter" style="width: <%= @daily_progress %>%"><%= @daily_progress.to_i %>%</span>
         </div>
       <% end %>
@@ -32,8 +32,8 @@
 
   </div>
   <div class="row">
-    <div class="medium-4 columns"></div>
-    <div class="medium-8 columns panel radius fitbit-panel">
+    <div class="medium-3 columns"></div>
+    <div class="medium-9 large-9 columns panel radius fitbit-panel">
       <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
       <div id="coming_soon">Steps Goal:<%= @fitbit_steps %></div>
       <div>Today's Steps:<%= @todays_steps %></div>
