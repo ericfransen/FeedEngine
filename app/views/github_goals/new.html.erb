@@ -7,7 +7,7 @@
 
     <%= form_for @github_goal do |f| %>
       <%= f.label :number_of_commits %>
-      <%= f.select :commit_goal, (1..10).to_a %>
+      <%= f.select :commit_goal, (1..27).to_a %>
       <%= f.submit 'Create Goal', class: 'button' %>
     <% end %>
   </div>
