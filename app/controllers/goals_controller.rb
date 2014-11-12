@@ -11,8 +11,6 @@ class GoalsController < ApplicationController
       end
     end
 
-
-
       @github_goal = GithubGoal.find_by(user_id: current_user.id)
 
       @first_name = current_user.first_name
@@ -27,9 +25,5 @@ class GoalsController < ApplicationController
       @todays_distance = current_user.fitbit_goal.todays_distance
       @progress        = current_user.fitbit_goal.progress
     end
-
   end
-
-
-
 end
