@@ -15,4 +15,10 @@ Rails.application.routes.draw do
   get '/auth/failure', to: 'sessions#failure'
   get '/auth/fitbit/callback', to: 'fitbit#create'
 
+  namespace 'api' do
+    namespace 'v1' do
+      resources :github_goals, only: [:index, :show]
+    end
+  end
+
 end
