@@ -10,8 +10,9 @@
       <%= link_to 'FitBit Integration', fitbit_path, class: 'button' %>
     <% end %>
     <%= link_to 'FitBit Settings', '#', class: 'button' %>
-    <%= link_to 'GoodReads Int.', new_goodread_path, class: 'button' %>
-
+    <% unless !@goodreads_goal == nil %>
+      <%= link_to 'GoodReads Int.', new_goodread_path, class: 'button' %>
+    <% end %>
 
   </div>
 
@@ -27,16 +28,17 @@
     <% end %>
     <h5>Current Streak:  <%= @current_streak %> | Longest Streak: <%= @longest_streak %> </h5>
 
-
   </div>
+
   <!-- this code below if for the other panels of our dashboard but commented out for our assesment -->
   <!-- <div class="row services" id="fitbit">
     <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
     <div id="coming_soon">COMING SOON</div>
-  </div>
+  </div> -->
 
   <div class="row services" id="goodreads">
     <img src='/assets/good_reads.png' alt="GoodReads" id="mini_logo">
-    <div id="coming_soon">COMING SOON</div>
-  </div> -->
+    <div>Current Book: <%= "BOOK" %> | Pages: <%= "000" %></div>
+    <div>
+  </div>
 </div>

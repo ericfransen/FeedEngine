@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   validates :name, :twitter_pic, presence: true
   has_many :github_goals
+  has_many :goodreads_goals
   has_many :oauth_accounts
 
   def self.find_or_create_by_auth(auth_data)
@@ -23,11 +24,13 @@ class User < ActiveRecord::Base
   end
 
   def add_oauth_account(data)
-    oauth_account = OauthAccount.find_or_initialize_by(provider: data["provider"])
+    oauth_account = OauthAccount.find_or_initialize_by(provider: data["provider"], user_id: self.id)
     unless oauth_account.persisted? && oauth_account.provider == data['provider']
-      oauth_account.user_id = self.id
       oauth_account.token   = data['credentials']['token']
       oauth_account.secret  = data['credentials']['secret']
+      if data['provider'] == 'goodreads'
+        update(goodreads_uid: data['extra']['raw_info']['id'])
+      end
       oauth_account.save
     end
   end

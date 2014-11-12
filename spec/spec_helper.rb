@@ -1,7 +1,8 @@
 require 'webmock/rspec'
 require 'JSON'
 
-WebMock.disable_net_connect!(allow_localhost: true)
+# WebMock.disable_net_connect!(allow_localhost: true)
+WebMock.allow_net_connect!
 
 body = [{
   id: '1',
