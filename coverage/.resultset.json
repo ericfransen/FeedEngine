@@ -8,7 +8,7 @@
       ],
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/support/omniauth.rb": [
         1,
-        6,
+        8,
         null,
         null,
         null,
@@ -21,7 +21,7 @@
         null,
         null,
         null,
-        6,
+        8,
         null,
         null,
         null,
@@ -36,10 +36,10 @@
         null,
         null,
         1,
-        6,
-        6,
-        6,
-        6,
+        8,
+        8,
+        8,
+        8,
         null
       ],
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/api/v1/fitbit_goals_controller.rb": [
@@ -64,8 +64,13 @@
         null,
         null,
         1,
+<<<<<<< HEAD
         253,
         235,
+=======
+        278,
+        256,
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         null,
         null,
         null
@@ -130,7 +135,43 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/features/github_goals_spec.rb": [
+=======
+<<<<<<< HEAD
+      "/Users/robertgu/turing/successive_life/spec/features/github_goals_spec.rb": [
+=======
+      "/Users/gustavo/turing/successive_life/spec/features/fitbit_goal_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        3,
+        3,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/gustavo/turing/successive_life/spec/features/github_goals_spec.rb": [
+>>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         1,
         null,
         1,
@@ -508,30 +549,30 @@
         1,
         null,
         1,
-        6,
-        6,
-        6,
-        6,
-        6,
-        6,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
         null,
-        6,
-        null,
-        null,
-        1,
-        14,
+        8,
         null,
         null,
         1,
-        14,
+        18,
         null,
         null,
         1,
+        18,
+        null,
+        null,
         1,
-        1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        2,
+        2,
         1,
         0,
         null,
@@ -629,10 +670,10 @@
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/sessions_controller.rb": [
         1,
         1,
-        6,
-        6,
-        6,
-        6,
+        8,
+        8,
+        8,
+        8,
         null,
         null,
         1,
@@ -650,7 +691,7 @@
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/goals_controller.rb": [
         1,
         1,
-        14,
+        18,
         4,
         4,
         4,
@@ -661,25 +702,38 @@
         null,
         null,
         null,
+<<<<<<< HEAD
         14,
+=======
         null,
-        14,
-        14,
-        14,
+        null,
+        18,
+>>>>>>> fitbit-capybara
+        null,
+        18,
+        18,
+        18,
         4,
         null,
         null,
-        14,
+        18,
         0,
         0,
         0,
         0,
         null,
         null,
+<<<<<<< HEAD
         14,
         0,
         null,
         null,
+=======
+<<<<<<< HEAD
+=======
+        null,
+>>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         null
       ],
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/models/oauth_account.rb": [
@@ -691,7 +745,25 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/github_goals_controller.rb": [
+=======
+<<<<<<< HEAD
+      "/Users/robertgu/turing/successive_life/app/controllers/github_goals_controller.rb": [
+=======
+      "/Users/gustavo/turing/successive_life/app/controllers/fitbit_controller.rb": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/gustavo/turing/successive_life/app/controllers/github_goals_controller.rb": [
+>>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         1,
         null,
         1,
@@ -732,6 +804,14 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1415890214
+=======
+<<<<<<< HEAD
+    "timestamp": 1415854904
+=======
+    "timestamp": 1415858248
+>>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
   }
 }
