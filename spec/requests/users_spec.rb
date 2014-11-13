@@ -10,7 +10,7 @@ describe "Users API" do
   end
 
   it 'sends a single user' do
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.create(:user, name: 'Tan Doan')
 
     get "/api/v1/users/#{user.id}"
 
