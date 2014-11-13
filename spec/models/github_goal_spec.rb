@@ -53,8 +53,4 @@ describe GithubGoal, type: :model do
     expect(github_goals.last.longest_streak).to eq(6)
   end
 
-
-
-
-
 end

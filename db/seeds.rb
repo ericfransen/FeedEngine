@@ -30,3 +30,16 @@ User.populate(1000) do |user|
   end
   puts "#{user.id}, #{user.name}"
 end
+
+
+wrapper_user = User.create(id: 1001, name: 'wrapper test',
+email: 'test@example.com',
+phone_number: '8675309',
+provider: 'twitter'
+)
+
+
+GithubGoal.create(streak: 1200,
+longest_streak: 14,
+user_id: wrapper_user.id
+)
