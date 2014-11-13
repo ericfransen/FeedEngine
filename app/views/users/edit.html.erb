@@ -1,0 +1,6 @@
+<% form_for @user do |f| %>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+  <%= f.label :when_do_you_want_to_recieve_your_daily_reminder %>
+  <%= f.select :time_to_text, [2, 5, 7] %>
+<% end %>
