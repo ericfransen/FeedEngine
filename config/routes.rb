@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :goals, only: [:index]
   resources :github_goals
-  resources :users, only: [:edit]
+  resources :users, only: [:edit, :update]
 
 
   namespace 'api' do
