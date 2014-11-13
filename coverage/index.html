@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.8.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.8.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.8.0/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.8.0/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.8.0/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-11-12T16:56:04-07:00">2014-11-12T16:56:04-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-11-12T17:20:39-07:00">2014-11-12T17:20:39-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">90.54%</span></span>
+    (<span class="covered_percent"><span class="yellow">87.5%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.68
+         3.07
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>31</b> files in total.
-    <b>317</b> relevant lines. 
-    <span class="green"><b>287</b> lines covered</span> and
-    <span class="red"><b>30</b> lines missed </span>
+    <b>320</b> relevant lines. 
+    <span class="green"><b>280</b> lines covered</span> and
+    <span class="red"><b>40</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -77,17 +77,17 @@
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>74.0</td>
+        <td>53.7</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#750901bac759979371782f6c3a0cab95fb092b6c" class="src_link" title="app/controllers/github_goals_controller.rb">app/controllers/github_goals_controller.rb</a></td>
-        <td class="yellow strong">88.89 %</td>
+        <td class="red strong">66.67 %</td>
         <td>38</td>
         <td>18</td>
-        <td>16</td>
-        <td>2</td>
-        <td>1.6</td>
+        <td>12</td>
+        <td>6</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#9cf68e6d0cdfa4e6972c6e04bd20829e8a38313d" class="src_link" title="app/controllers/goals_controller.rb">app/controllers/goals_controller.rb</a></td>
-        <td class="red strong">80.0 %</td>
+        <td class="red strong">75.0 %</td>
         <td>35</td>
         <td>20</td>
-        <td>16</td>
-        <td>4</td>
-        <td>5.9</td>
+        <td>15</td>
+        <td>5</td>
+        <td>4.3</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>32</td>
         <td>28</td>
         <td>4</td>
-        <td>6.2</td>
+        <td>5.7</td>
       </tr>
       
       <tr>
@@ -177,7 +177,7 @@
         <td>30</td>
         <td>30</td>
         <td>0</td>
-        <td>3.1</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -222,12 +222,12 @@
       
       <tr>
         <td class="strong"><a href="#b7d8d80343693be7940508b6f4c5e4b89cd3dd3e" class="src_link" title="spec/features/github_goals_spec.rb">spec/features/github_goals_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="yellow strong">88.89 %</td>
         <td>67</td>
         <td>45</td>
-        <td>45</td>
-        <td>0</td>
-        <td>1.3</td>
+        <td>40</td>
+        <td>5</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -313,9 +313,9 @@
       <tr>
         <td class="strong"><a href="#bfb1fae426c89633af8fa16a82bc4b208e2c0bce" class="src_link" title="spec/requests/fitbit_goal_spec.rb">spec/requests/fitbit_goal_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>5</td>
-        <td>5</td>
+        <td>12</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -612,14 +612,14 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="229" data-linenumber="9">
-          <span class="hits">229</span>
+        <li class="covered" data-hits="168" data-linenumber="9">
+          <span class="hits">168</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
       
-        <li class="covered" data-hits="211" data-linenumber="10">
-          <span class="hits">211</span>
+        <li class="covered" data-hits="150" data-linenumber="10">
+          <span class="hits">150</span>
           
           <code class="ruby">      @current_user ||= User.find(session[:user_id])</code>
         </li>
@@ -649,11 +649,11 @@
         <div class="source_table" id="750901bac759979371782f6c3a0cab95fb092b6c">
   <div class="header">
     <h3>app/controllers/github_goals_controller.rb</h3>
-    <h4><span class="yellow">88.89 %</span> covered</h4>
+    <h4><span class="red">66.67 %</span> covered</h4>
     <div>
       <b>18</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -768,8 +768,8 @@
           <code class="ruby">    # binding.pry</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
           
           <code class="ruby">    @github_goal = current_user.github_goals.find(params[:id])</code>
         </li>
@@ -804,20 +804,20 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
           
           <code class="ruby">    @github_goal = current_user.github_goals.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
           
           <code class="ruby">    if @github_goal.update_attributes(github_goal_params)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
           
           <code class="ruby">      redirect_to goals_path</code>
         </li>
@@ -870,8 +870,8 @@
           <code class="ruby">  def github_goal_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="36">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="36">
+          <span class="hits">3</span>
           
           <code class="ruby">    params.require(:github_goal).permit(:username, :commit_goal)</code>
         </li>
@@ -955,11 +955,11 @@
         <div class="source_table" id="9cf68e6d0cdfa4e6972c6e04bd20829e8a38313d">
   <div class="header">
     <h3>app/controllers/goals_controller.rb</h3>
-    <h4><span class="red">80.0 %</span> covered</h4>
+    <h4><span class="red">75.0 %</span> covered</h4>
     <div>
       <b>20</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -978,50 +978,50 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="3">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="13" data-linenumber="3">
+          <span class="hits">13</span>
           
           <code class="ruby">    if !current_user.github_goals.empty?</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
           
           <code class="ruby">      @current_github_goal = current_user.github_goals.last.commit_goal</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">      @todays_commits = current_user.github_goals.last.daily_commit_count</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="6">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
           <code class="ruby">      @current_streak = current_user.github_goals.last.streak</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="7">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
           
           <code class="ruby">      @longest_streak = current_user.github_goals.last.longest_streak</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">      @daily_progress = current_user.github_goals.last.progress</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
           
           <code class="ruby">      if current_user.github_token?</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
           <code class="ruby">        GithubWorker.perform_async(current_user.id)</code>
         </li>
@@ -1056,8 +1056,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="16">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="16">
+          <span class="hits">10</span>
           
           <code class="ruby">      @github_goal = GithubGoal.find_by(user_id: current_user.id)</code>
         </li>
@@ -1068,26 +1068,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="18">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="18">
+          <span class="hits">10</span>
           
           <code class="ruby">      @first_name = current_user.first_name</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="19">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="19">
+          <span class="hits">10</span>
           
           <code class="ruby">      @twitter_pic = current_user.high_res_profile</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="20">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="20">
+          <span class="hits">10</span>
           
           <code class="ruby">      @fitbit = current_user.oauth_accounts.select do |account|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="21">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">        account.provider == &#39;fitbit&#39;</code>
         </li>
@@ -1104,8 +1104,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="24">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="24">
+          <span class="hits">10</span>
           
           <code class="ruby">    if current_user.fitbit_goal</code>
         </li>
@@ -1740,8 +1740,8 @@
           <code class="ruby">  def get_the_json</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="5">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
           
           <code class="ruby">    response =  Faraday.get(&quot;https://api.github.com/users/#{self.user</code>
         </li>
@@ -1764,8 +1764,8 @@
           <code class="ruby">                                                              .nickname}/events?client_id=16d9d7f931c5eb4f19c3&amp;client_secret=f78406d4b6d5a4e3abf9921e0aad80a4faaf8d5d&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="9">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
           
           <code class="ruby">    JSON.parse(response.body)</code>
         </li>
@@ -1788,8 +1788,8 @@
           <code class="ruby">  def push_events</code>
         </li>
       
-        <li class="covered" data-hits="48" data-linenumber="13">
-          <span class="hits">48</span>
+        <li class="covered" data-hits="44" data-linenumber="13">
+          <span class="hits">44</span>
           
           <code class="ruby">    get_the_json.select { |event| event[&quot;type&quot;] == &quot;PushEvent&quot; }</code>
         </li>
@@ -1812,8 +1812,8 @@
           <code class="ruby">  def daily_events</code>
         </li>
       
-        <li class="covered" data-hits="33" data-linenumber="17">
-          <span class="hits">33</span>
+        <li class="covered" data-hits="30" data-linenumber="17">
+          <span class="hits">30</span>
           
           <code class="ruby">    push_events.select { |event| Date.parse(event[&quot;created_at&quot;]) == Date.today }</code>
         </li>
@@ -1836,8 +1836,8 @@
           <code class="ruby">  def daily_commits</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="21">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="18" data-linenumber="21">
+          <span class="hits">18</span>
           
           <code class="ruby">    daily_events.map { |event| event[&quot;payload&quot;][&quot;commits&quot;] }</code>
         </li>
@@ -1860,8 +1860,8 @@
           <code class="ruby">  def current_users_commits</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="25">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="18" data-linenumber="25">
+          <span class="hits">18</span>
           
           <code class="ruby">    daily_commits.flatten.select { |commit| commit[&#39;author&#39;][&#39;name&#39;] == self.user.oauth_accounts.find_by(provider: &#39;github&#39;).name }</code>
         </li>
@@ -1884,8 +1884,8 @@
           <code class="ruby">  def daily_commit_count</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="29">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="9" data-linenumber="29">
+          <span class="hits">9</span>
           
           <code class="ruby">    current_users_commits.count</code>
         </li>
@@ -2274,8 +2274,8 @@
           <code class="ruby">  def high_res_profile</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="19">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="19">
+          <span class="hits">10</span>
           
           <code class="ruby">    twitter_pic.sub &quot;_normal&quot;, &quot;&quot;</code>
         </li>
@@ -2298,8 +2298,8 @@
           <code class="ruby">  def first_name</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="23">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="10" data-linenumber="23">
+          <span class="hits">10</span>
           
           <code class="ruby">    name.split(&#39; &#39;)[0]</code>
         </li>
@@ -2406,8 +2406,8 @@
           <code class="ruby">  def github_token?</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="41">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="41">
+          <span class="hits">3</span>
           
           <code class="ruby">    self.oauth_accounts.find_by(provider: &#39;github&#39;).token</code>
         </li>
@@ -2665,11 +2665,11 @@
         <div class="source_table" id="b7d8d80343693be7940508b6f4c5e4b89cd3dd3e">
   <div class="header">
     <h3>spec/features/github_goals_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">88.89 %</span> covered</h4>
     <div>
       <b>45</b> relevant lines. 
-      <span class="green"><b>45</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>40</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -3018,8 +3018,8 @@
           <code class="ruby">      page.find(&#39;#sidebar&#39;).click_on(&#39;GitHub Settings&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="58">
+          
           
           <code class="ruby">      expect(current_path).to eq edit_github_goal_path(goal)</code>
         </li>
@@ -3030,26 +3030,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
           
           <code class="ruby">      find(&#39;#github_goal_commit_goal&#39;).find(:xpath, &#39;option[2]&#39;).select_option</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
           
           <code class="ruby">      click_on(&#39;Create Goal&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
           
           <code class="ruby">      expect(current_path).to eq goals_path</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="63">
+          
           
           <code class="ruby">      expect(user.github_goals.last.commit_goal).to eq 2</code>
         </li>
@@ -3927,8 +3927,8 @@
     <h3>spec/requests/fitbit_goal_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3951,52 +3951,58 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    FactoryGirl.create_list(:fitbit_goal, 1)</code>
+          <code class="ruby">    FitbitGoal.delete_all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    FactoryGirl.create_list(:fitbit_goal, 17)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">    get &#39;/api/v1/fitbit_goals&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(response).to be_success</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    # json = JSON.parse(response.body)</code>
+          <code class="ruby">    json = JSON.parse(response.body)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    # expect(json.length).to eq(1)</code>
+          <code class="ruby">    expect(json.length).to eq(17)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
