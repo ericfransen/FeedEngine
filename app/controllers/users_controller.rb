@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def update
     @user = current_user
     if @user.update_attributes(user_params)
-      redirect_to goals_path, notice: 'Thanks for signing up for text reminders'
+      redirect_to goals_path
     else
       render :edit
     end
