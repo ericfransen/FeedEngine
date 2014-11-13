@@ -16,7 +16,8 @@ describe 'fitbit goals', :type => :feature do
       expect(current_path).to eq auth_fitbit_callback_path
     end
 
-
-
+    it "can view today's steps" do
+      expect(page.text).to match("Today's Steps:")
+    end
   end
 end
