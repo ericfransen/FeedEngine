@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-11-12T16:20:51-07:00">2014-11-12T16:20:51-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-11-12T16:56:04-07:00">2014-11-12T16:56:04-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">92.86%</span></span>
+    (<span class="covered_percent"><span class="green">90.54%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.92
+         3.68
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>27</b> files in total.
-    <b>294</b> relevant lines. 
-    <span class="green"><b>273</b> lines covered</span> and
-    <span class="red"><b>21</b> lines missed </span>
+    <b>31</b> files in total.
+    <b>317</b> relevant lines. 
+    <span class="green"><b>287</b> lines covered</span> and
+    <span class="red"><b>30</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -49,6 +49,16 @@
       </tr>
     </thead>
     <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#bd7bfd2960105c19e92ba9419f871e0675d222d6" class="src_link" title="app/controllers/api/v1/fitbit_goals_controller.rb">app/controllers/api/v1/fitbit_goals_controller.rb</a></td>
+        <td class="red strong">71.43 %</td>
+        <td>11</td>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>0.7</td>
+      </tr>
       
       <tr>
         <td class="strong"><a href="#358003135329916c058be36d039c2235d600fecc" class="src_link" title="app/controllers/api/v1/github_goals_controller.rb">app/controllers/api/v1/github_goals_controller.rb</a></td>
@@ -132,12 +142,12 @@
       
       <tr>
         <td class="strong"><a href="#70fe4562b5eb88fd9e9b8511f93a590cd84afc45" class="src_link" title="app/models/fitbit_goal.rb">app/models/fitbit_goal.rb</a></td>
-        <td class="red strong">80.0 %</td>
+        <td class="red strong">47.06 %</td>
         <td>38</td>
-        <td>10</td>
+        <td>17</td>
         <td>8</td>
-        <td>2</td>
-        <td>0.8</td>
+        <td>9</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
@@ -178,6 +188,16 @@
         <td>4</td>
         <td>4</td>
         <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b64267d79917e493fe84db50724a0ffed0d3cace" class="src_link" title="spec/controllers/api/v1/github_goals_controller_spec.rb">spec/controllers/api/v1/github_goals_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -291,11 +311,31 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#bfb1fae426c89633af8fa16a82bc4b208e2c0bce" class="src_link" title="spec/requests/fitbit_goal_spec.rb">spec/requests/fitbit_goal_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#287208a504621995a7c444a7d5d0602552c0e203" class="src_link" title="spec/requests/github_goals_spec.rb">spec/requests/github_goals_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>22</td>
         <td>13</td>
         <td>13</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6a4df9403135c8c165133841da0d4777cc09de52" class="src_link" title="spec/support/factory_girl.rb">spec/support/factory_girl.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -335,6 +375,90 @@
       </div>
     
       <div class="source_files">
+      
+        <div class="source_table" id="bd7bfd2960105c19e92ba9419f871e0675d222d6">
+  <div class="header">
+    <h3>app/controllers/api/v1/fitbit_goals_controller.rb</h3>
+    <h4><span class="red">71.43 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::FitbitGoalsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @fitbit_goals = FitbitGoal.all</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: @fitbit_goals</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    @fitbit_goal = FitbitGoal.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    render json: @fitbit_goal</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
       
         <div class="source_table" id="358003135329916c058be36d039c2235d600fecc">
   <div class="header">
@@ -1335,11 +1459,11 @@
         <div class="source_table" id="70fe4562b5eb88fd9e9b8511f93a590cd84afc45">
   <div class="header">
     <h3>app/models/fitbit_goal.rb</h3>
-    <h4><span class="red">80.0 %</span> covered</h4>
+    <h4><span class="red">47.06 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
+      <b>17</b> relevant lines. 
       <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="red"><b>9</b> lines missed.</span>
     </div>
   </div>
   
@@ -1430,10 +1554,10 @@
           <code class="ruby">  def todays_activities</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="missed" data-hits="0" data-linenumber="15">
           
           
-          <code class="ruby">    # fitbit_data.activities_on_date(&quot;today&quot;)</code>
+          <code class="ruby">    fitbit_data.activities_on_date(&quot;today&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -1454,10 +1578,10 @@
           <code class="ruby">  def daily_steps_goal</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="missed" data-hits="0" data-linenumber="19">
           
           
-          <code class="ruby">    # todays_activities[&quot;goals&quot;][&quot;steps&quot;]</code>
+          <code class="ruby">    todays_activities[&quot;goals&quot;][&quot;steps&quot;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
@@ -1478,10 +1602,10 @@
           <code class="ruby">  def todays_steps</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="missed" data-hits="0" data-linenumber="23">
           
           
-          <code class="ruby">    # todays_activities[&#39;summary&#39;][&#39;steps&#39;]</code>
+          <code class="ruby">    todays_activities[&#39;summary&#39;][&#39;steps&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -1502,10 +1626,10 @@
           <code class="ruby">  def todays_distance</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    # todays_activities[&#39;summary&#39;][&#39;distances&#39;][0][&#39;distance&#39;]</code>
+          <code class="ruby">    todays_activities[&#39;summary&#39;][&#39;distances&#39;][0][&#39;distance&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -1526,34 +1650,34 @@
           <code class="ruby">  def progress</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="missed" data-hits="0" data-linenumber="31">
           
           
-          <code class="ruby">    # if todays_steps &gt; daily_steps_goal</code>
+          <code class="ruby">    if todays_steps &gt; daily_steps_goal</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="missed" data-hits="0" data-linenumber="32">
           
           
-          <code class="ruby">    #   100</code>
+          <code class="ruby">      100</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
           
           
-          <code class="ruby">    # else</code>
+          <code class="ruby">    else</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="missed" data-hits="0" data-linenumber="34">
           
           
-          <code class="ruby">    #   (todays_steps.to_f/daily_steps_goal.to_f) * 100</code>
+          <code class="ruby">      (todays_steps.to_f/daily_steps_goal.to_f) * 100</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">    # end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
@@ -2385,6 +2509,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="b64267d79917e493fe84db50724a0ffed0d3cace">
+  <div class="header">
+    <h3>spec/controllers/api/v1/github_goals_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe Api::V1::GithubGoalsController, :type =&gt; :controller do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -3750,6 +3922,90 @@
   </pre>
 </div>
       
+        <div class="source_table" id="bfb1fae426c89633af8fa16a82bc4b208e2c0bce">
+  <div class="header">
+    <h3>spec/requests/fitbit_goal_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;FitbitGoals Api&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;sends a list of goals&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    FactoryGirl.create_list(:fitbit_goal, 1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &#39;/api/v1/fitbit_goals&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_success</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    # json = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    # expect(json.length).to eq(1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="287208a504621995a7c444a7d5d0602552c0e203">
   <div class="header">
     <h3>spec/requests/github_goals_spec.rb</h3>
@@ -3891,6 +4147,42 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="6a4df9403135c8c165133841da0d4777cc09de52">
+  <div class="header">
+    <h3>spec/support/factory_girl.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.configure do |config|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.include FactoryGirl::Syntax::Methods</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby">end</code>

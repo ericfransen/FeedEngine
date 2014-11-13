@@ -1,6 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/gustavo/turing/successive_life/spec/support/factory_girl.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/gustavo/turing/successive_life/spec/support/omniauth.rb": [
         1,
         6,
@@ -37,17 +42,16 @@
         6,
         null
       ],
-      "/Users/gustavo/turing/successive_life/app/controllers/api/v1/github_goals_controller.rb": [
+      "/Users/gustavo/turing/successive_life/app/controllers/api/v1/fitbit_goals_controller.rb": [
         1,
+        1,
+        1,
+        1,
+        null,
         null,
         1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
@@ -63,6 +67,27 @@
         229,
         211,
         null,
+        null,
+        null
+      ],
+      "/Users/gustavo/turing/successive_life/spec/controllers/api/v1/github_goals_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/gustavo/turing/successive_life/app/controllers/api/v1/github_goals_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -250,26 +275,26 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        1,
-        null,
+        0,
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        1,
-        null,
+        0,
         null,
         null,
         1,
+        0,
         null,
         null,
+        1,
+        0,
         null,
         null,
+        1,
+        0,
+        0,
+        null,
+        0,
         null,
         null,
         null,
@@ -462,6 +487,19 @@
         null,
         null
       ],
+      "/Users/gustavo/turing/successive_life/spec/requests/fitbit_goal_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/gustavo/turing/successive_life/spec/requests/github_goals_spec.rb": [
         null,
         1,
@@ -617,6 +655,6 @@
         null
       ]
     },
-    "timestamp": 1415834451
+    "timestamp": 1415836564
   }
 }
