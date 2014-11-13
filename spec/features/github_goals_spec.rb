@@ -54,7 +54,7 @@ describe 'github goals', :type => :feature do
 
 
       expect(page).to_not have_content('GitHub Integration')
-      page.find('#sidebar').click_on('GitHub Settings')
+      page.find('.dropdown').click_link('GitHub Settings')
       expect(current_path).to eq edit_github_goal_path(goal)
 
       find('#github_goal_commit_goal').find(:xpath, 'option[2]').select_option
