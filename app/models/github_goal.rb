@@ -2,8 +2,6 @@ class GithubGoal < ActiveRecord::Base
   belongs_to :user
 
   def get_the_json
-    # client = Octokit::Client.new(access_token: self.user.oauth_accounts.find_by(provider: 'github').token)
-
     response =  Faraday.get("https://api.github.com/users/#{self.user
                                                               .oauth_accounts
                                                               .find_by(provider: 'github')
@@ -19,8 +17,16 @@ class GithubGoal < ActiveRecord::Base
     push_events.select { |event| Date.parse(event["created_at"]) == Date.today }
   end
 
+  def daily_commits
+    daily_events.map { |event| event["payload"]["commits"] }
+  end
+
+  def current_users_commits
+    daily_commits.flatten.select { |commit| commit['author']['name'] == self.user.oauth_accounts.find_by(provider: 'github').name }
+  end
+
   def daily_commit_count
-    daily_events.inject(0) { |sum, event| sum + event["payload"]["commits"].count }
+    current_users_commits.count
   end
 
   def daily_progress
