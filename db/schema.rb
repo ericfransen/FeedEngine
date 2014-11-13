@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20141112204807) do
     t.string "provider"
     t.string "phone_number"
     t.string "twitter_pic"
+    t.string "goodreads_uid"
   end
 
 end

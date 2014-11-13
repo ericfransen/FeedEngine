@@ -1,12 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/robertgu/turing/successive_life/spec/support/factory_girl.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/support/factory_girl.rb": [
         1,
         1,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/support/omniauth.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/support/omniauth.rb": [
         1,
         8,
         null,
@@ -42,7 +42,7 @@
         8,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/api/v1/fitbit_goals_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/api/v1/fitbit_goals_controller.rb": [
         1,
         1,
         1,
@@ -55,7 +55,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/application_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -64,41 +64,46 @@
         null,
         null,
         1,
+<<<<<<< HEAD
+        253,
+        235,
+=======
         278,
         256,
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         null,
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/controllers/api/v1/github_goals_controller_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/robertgu/turing/successive_life/app/controllers/api/v1/github_goals_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/robertgu/turing/successive_life/spec/controllers/githubs_controller_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/controllers/api/v1/github_goals_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/githubs_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/api/v1/github_goals_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/controllers/githubs_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/githubs_controller.rb": [
         1,
         1,
         1,
@@ -107,14 +112,14 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/controllers/goodreads_controller_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/controllers/goodreads_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/goodreads_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/goodreads_controller.rb": [
         1,
         null,
         null,
@@ -125,11 +130,14 @@
         null,
         1,
         0,
-        null,
+        0,
         0,
         null,
         null
       ],
+<<<<<<< HEAD
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/features/github_goals_spec.rb": [
+=======
 <<<<<<< HEAD
       "/Users/robertgu/turing/successive_life/spec/features/github_goals_spec.rb": [
 =======
@@ -163,6 +171,7 @@
       ],
       "/Users/gustavo/turing/successive_life/spec/features/github_goals_spec.rb": [
 >>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         1,
         null,
         1,
@@ -216,22 +225,23 @@
         1,
         1,
         1,
-        null,
-        null,
-        1,
-        1,
         1,
         null,
         1,
         1,
         1,
+        null,
         1,
+        1,
+        1,
+        1,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/features/twitter_oauth_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/features/twitter_oauth_spec.rb": [
         1,
         null,
         1,
@@ -255,7 +265,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/features/user_login_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/features/user_login_spec.rb": [
         1,
         null,
         1,
@@ -265,10 +275,10 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/features/user_logout_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/features/user_logout_spec.rb": [
 
       ],
-      "/Users/robertgu/turing/successive_life/spec/helpers/api/v1/github_goals_helper_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/helpers/api/v1/github_goals_helper_spec.rb": [
         1,
         null,
         null,
@@ -285,14 +295,14 @@
         1,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/models/fitbit_goal_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/models/fitbit_goal_spec.rb": [
         1,
         null,
         1,
         2,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/models/fitbit_goal.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/models/fitbit_goal.rb": [
         1,
         null,
         1,
@@ -332,7 +342,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/models/github_goal_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/models/github_goal_spec.rb": [
         1,
         1,
         null,
@@ -390,10 +400,10 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/github_api_helper.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/github_api_helper.rb": [
 
       ],
-      "/Users/robertgu/turing/successive_life/app/models/github_goal.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/models/github_goal.rb": [
         1,
         1,
         null,
@@ -461,7 +471,68 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/models/user_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/models/goodreads_api_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/models/goodreads_api.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        20,
+        null,
+        null,
+        4,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/models/user_spec.rb": [
         1,
         2,
         2,
@@ -469,7 +540,8 @@
         2,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/models/user.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/models/user.rb": [
+        1,
         1,
         1,
         1,
@@ -501,6 +573,9 @@
         2,
         2,
         2,
+        1,
+        0,
+        null,
         1,
         1,
         1,
@@ -515,7 +590,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/requests/fitbit_goal_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/requests/fitbit_goal_spec.rb": [
         1,
         1,
         1,
@@ -541,7 +616,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/requests/github_goals_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/requests/github_goals_spec.rb": [
         null,
         1,
         1,
@@ -565,7 +640,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/spec/workers/github_api_worker_spec.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/spec/workers/github_api_worker_spec.rb": [
         1,
         1,
         1,
@@ -573,7 +648,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/workers/github_worker.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/workers/github_worker.rb": [
         1,
         1,
         1,
@@ -586,13 +661,13 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/welcome_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/welcome_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/sessions_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/sessions_controller.rb": [
         1,
         1,
         8,
@@ -613,7 +688,7 @@
         null,
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/controllers/goals_controller.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/goals_controller.rb": [
         1,
         1,
         18,
@@ -649,16 +724,30 @@
         null,
         null,
 <<<<<<< HEAD
+        14,
+        0,
+        null,
+        null,
+=======
+<<<<<<< HEAD
 =======
         null,
 >>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         null
       ],
-      "/Users/robertgu/turing/successive_life/app/models/oauth_account.rb": [
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/models/oauth_account.rb": [
         1,
         1,
+        null,
+        1,
+        null,
+        null,
         null
       ],
+<<<<<<< HEAD
+      "/Users/ericfransen/Dropbox/turing/projects/feed_engine/app/controllers/github_goals_controller.rb": [
+=======
 <<<<<<< HEAD
       "/Users/robertgu/turing/successive_life/app/controllers/github_goals_controller.rb": [
 =======
@@ -674,6 +763,7 @@
       ],
       "/Users/gustavo/turing/successive_life/app/controllers/github_goals_controller.rb": [
 >>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
         1,
         null,
         1,
@@ -715,9 +805,13 @@
       ]
     },
 <<<<<<< HEAD
+    "timestamp": 1415890214
+=======
+<<<<<<< HEAD
     "timestamp": 1415854904
 =======
     "timestamp": 1415858248
 >>>>>>> fitbit-capybara
+>>>>>>> 6e56505ba78b8008786c9d0804a78dcc40e13810
   }
 }

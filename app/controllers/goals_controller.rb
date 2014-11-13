@@ -25,5 +25,9 @@ class GoalsController < ApplicationController
       @todays_distance = current_user.fitbit_goal.todays_distance
       @progress        = current_user.fitbit_goal.progress
     end
+
+    if current_user.goodreads_uid
+      @current_books = GoodreadsApi.get_current_books(current_user)
+    end
   end
 end
