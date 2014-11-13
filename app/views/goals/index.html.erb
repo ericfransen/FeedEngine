@@ -5,8 +5,6 @@
 
     <% if current_user.github_goals.count == 0 %>
       <%= link_to 'GitHub Integration', github_path, class: 'button' %>
-    <% else %>
-      <%= link_to 'GitHub Settings', edit_github_goal_path(current_user.github_goals.last), class: 'button' %>
     <% end %>
     <% if @fitbit.count < 1 %>
       <%= link_to 'FitBit Integration', fitbit_path, class: 'button' %>
