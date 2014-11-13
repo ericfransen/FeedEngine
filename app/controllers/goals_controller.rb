@@ -30,5 +30,4 @@ class GoalsController < ApplicationController
       @current_books = GoodreadsApi.get_current_books(current_user)
     end
   end
-
 end

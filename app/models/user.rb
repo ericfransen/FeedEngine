@@ -25,10 +25,6 @@ class User < ActiveRecord::Base
   end
 
   def add_oauth_account(data)
-# <<<<<<< HEAD
-#     oauth_account = OauthAccount.find_or_initialize_by(provider: data["provider"], user_id: self.id)
-#     unless oauth_account.persisted? && oauth_account.provider == data['provider']
-# =======
     oauth_account = OauthAccount.find_or_initialize_by(token: data['credentials']["token"])
     unless oauth_account.persisted? && oauth_account.token == data['credentials']["token"]
       oauth_account.user_id = self.id
@@ -37,8 +33,9 @@ class User < ActiveRecord::Base
       if data['provider'] == 'goodreads'
         update(goodreads_uid: data['extra']['raw_info']['id'])
       end
+      oauth_account.name     = data['info']['name']
       oauth_account.nickname = data['info']['nickname']
-      oauth_account.uid     = data['uid']
+      oauth_account.uid      = data['uid']
       oauth_account.provider = data['provider']
       oauth_account.save
     end

@@ -5,8 +5,6 @@
 
     <% if current_user.github_goals.count == 0 %>
       <%= link_to 'GitHub Integration', github_path, class: 'button' %>
-    <% else %>
-      <%= link_to 'GitHub Settings', edit_github_goal_path(current_user.github_goals.last), class: 'button' %>
     <% end %>
     <% if @fitbit.count < 1 %>
       <%= link_to 'FitBit Integration', fitbit_path, class: 'button' %>
@@ -19,14 +17,14 @@
 
   <div class="row">
     <div class="medium-3 columns"></div>
-    <div class="medium-8 columns panel radius github">
+    <div class="medium-9 large-9 columns panel radius github">
       <img src='/assets/github.png' alt="GitHub" id="mini_logo">
       <h5>Daily commit goal: <%= @current_github_goal %></h5>
       <h5>Commits today: <%= @todays_commits %></h5>
       <h5>Progress: </h5>
       <% if current_user.github_goals.count > 0 %>
-        <div class="progress alert">
-          <span class="meter" style="width: <%= @daily_progress %>%"><%= @daily_progress %>%</span>
+        <div class="progress success radius round">
+          <span class="meter" style="width: <%= @daily_progress %>%"><%= @daily_progress.to_i %>%</span>
         </div>
       <% end %>
       <h5>Current Streak:  <%= @current_streak %> | Longest Streak: <%= @longest_streak %> </h5>
@@ -35,8 +33,8 @@
 
 
   <div class="row">
-    <div class="medium-4 columns"></div>
-    <div class="medium-8 columns panel radius fitbit-panel">
+    <div class="medium-3 columns"></div>
+    <div class="medium-9 large-9 columns panel radius fitbit-panel">
       <img src='/assets/fitbit.png' alt="FitBit" id="mini_logo">
       <div id="coming_soon">Steps Goal:<%= @fitbit_steps %></div>
       <div>Today's Steps:<%= @todays_steps %></div>

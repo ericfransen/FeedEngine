@@ -7,7 +7,7 @@ describe GithubGoal, type: :model do
 
   let!(:user) { FactoryGirl.create(:user) }
   let!(:github_goal) { GithubGoal.create(username: 'dglunz', commit_goal: 1, streak: 2, longest_streak: 2, user_id: user.id)}
-  let!(:oauth_account) { FactoryGirl.create(:oauth_account, user_id: user.id, provider: 'github')}
+  let!(:oauth_account) { FactoryGirl.create(:oauth_account, user_id: user.id, provider: 'github', name: 'Danny Glunz')}
 
   it 'can retrieve push events' do
     push_events = github_goal.push_events
@@ -52,9 +52,5 @@ describe GithubGoal, type: :model do
     github_goals = GithubGoal.check_daily_goal
     expect(github_goals.last.longest_streak).to eq(6)
   end
-
-
-
-
 
 end

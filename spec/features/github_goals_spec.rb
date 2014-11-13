@@ -54,13 +54,14 @@ describe 'github goals', :type => :feature do
         expect(current_path).to eq goals_path
 
         expect(page).to_not have_content('GitHub Integration')
-        page.find('#sidebar').click_on('GitHub Settings')
+        page.find('.dropdown').click_link('GitHub Settings')
         expect(current_path).to eq edit_github_goal_path(goal)
 
         find('#github_goal_commit_goal').find(:xpath, 'option[2]').select_option
         click_on('Create Goal')
         expect(current_path).to eq goals_path
         expect(user.github_goals.last.commit_goal).to eq 2
+
       end
     end
   end
