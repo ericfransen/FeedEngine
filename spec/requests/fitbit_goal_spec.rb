@@ -9,4 +9,16 @@ describe 'FitbitGoals Api' do
     json = JSON.parse(response.body)
     expect(json.length).to eq(17)
   end
+
+
+  it 'finds a single fitbit goal' do
+    FitbitGoal.delete_all
+    fitbit_goal = FactoryGirl.create(:fitbit_goal, id: 4)
+
+    get "/api/v1/fitbit_goals/#{fitbit_goal.id}"
+
+    expect(response).to be_success
+    json = JSON.parse(response.body)
+    expect(json['user_id']).to eq(4)
+  end
 end
