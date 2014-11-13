@@ -29,7 +29,4 @@ class GoalsController < ApplicationController
     end
 
   end
-
-
-
 end
