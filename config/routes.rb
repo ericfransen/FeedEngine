@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     namespace 'v1' do
       resources :github_goals, only: [:index, :show]
       resources :fitbit_goals, only: [:index, :show]
+      resources :users, only: [:index, :show]
     end
   end
 
