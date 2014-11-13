@@ -10,6 +10,7 @@ User.populate(1000) do |user|
   user.email = 'tan@example.com'
   user.phone_number = '8675309'
   user.provider = 'twitter'
+  user.goodreads_uid = '18828400'
   GithubGoal.populate(1) do |github_goal|
     github_goal.streak = 8
     github_goal.longest_streak = 14

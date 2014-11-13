@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20141113001358) do
     t.string "phone_number"
     t.string "twitter_pic"
     t.time   "time_to_text"
+    t.string "goodreads_uid"
   end
 
 end

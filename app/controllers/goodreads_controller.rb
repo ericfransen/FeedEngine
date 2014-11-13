@@ -8,7 +8,7 @@ class GoodreadsController < ApplicationController
 
   def create
     current_user.add_oauth_account(request.env['omniauth.auth'])
-
+    GoodreadsApi.new(current_user)
     redirect_to goals_path
   end
 end

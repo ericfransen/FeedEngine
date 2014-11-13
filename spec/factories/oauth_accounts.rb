@@ -1,7 +1,8 @@
 FactoryGirl.define do
   factory :oauth_account do
-    token  '1234abcd'
-    secret '9987zyxw'
+    token "gpQn9Aso19sGTs4g3DWNFCeRw3lbrirN"
+    secret "TQItVqno15ARB9kkqM91uHOhUFqb6JrR"
+    provider "twitter"
+    # user_id
   end
-
 end
