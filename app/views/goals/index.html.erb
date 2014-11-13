@@ -14,8 +14,9 @@
 
     <%= link_to 'GoodReads Int.', new_goodread_path, class: 'button' %>
 
-
   </div>
+
+
   <div class="row">
     <div class="medium-3 columns"></div>
     <div class="medium-8 columns panel radius github">
@@ -30,8 +31,9 @@
       <% end %>
       <h5>Current Streak:  <%= @current_streak %> | Longest Streak: <%= @longest_streak %> </h5>
     </div>
-
   </div>
+
+
   <div class="row">
     <div class="medium-4 columns"></div>
     <div class="medium-8 columns panel radius fitbit-panel">
@@ -46,5 +48,24 @@
       <% end %>
     </div>
   </div>
+
+
+  <div class="row">
+    <div class="medium-4 columns"></div>
+    <div class="medium-8 columns panel radius fitbit-panel">
+      <img src='/assets/good_reads.png' alt="GoodReads" id="mini_logo">
+      <div>
+        <% if current_user.goodreads_uid %>
+        <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Current Books</button><br>
+          <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+            <% @current_books.each do |book| %>
+              <li id="<%=book%>"><a href="#"><%= book %></a></li>
+            <% end %>
+          </ul>
+        <% end %>
+    </div>
+  </div>
+
+
 
 </div>

@@ -11,8 +11,6 @@ class GoalsController < ApplicationController
       end
     end
 
-
-
       @github_goal = GithubGoal.find_by(user_id: current_user.id)
 
       @first_name = current_user.first_name
@@ -28,8 +26,9 @@ class GoalsController < ApplicationController
       @progress        = current_user.fitbit_goal.progress
     end
 
+    if current_user.goodreads_uid
+      @current_books = GoodreadsApi.get_current_books(current_user)
+    end
   end
-
-
 
 end

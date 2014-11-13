@@ -27,6 +27,8 @@ class GoodreadsApi
               end
 
     current_books = results.map{|r| r.css('book title').text}
+                    .each { |title| title.split(' ').map(&:capitalize).join(' ') }
+
   end
 
 end
